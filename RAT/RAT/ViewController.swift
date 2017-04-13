@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 class ViewController: UIViewController {
 
@@ -28,15 +29,13 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var facebookLogInButton: UIButton!
     
-    var person = Person()
-    
     @IBAction func logIn(_ sender: Any) {
         // TODO: проверить вводимые поля
         /*
         person.email = emailTextField.text!
         person.password = passwordTextField.text!
          */
-        
+        let person = Person()
         person.email = "leoniknik@mail.ru"
         person.password = "1234"
         
@@ -52,31 +51,27 @@ class ViewController: UIViewController {
     }
     
     func logInCallback(_ notification: NSNotification){
-        
-        let data = notification.userInfo as! [String : Any]
-        let id = data["user_id"]
-        person = DataBaseHelper.getPerson(email: person.email)
-        DataBaseHelper.setPersonID(person: person, id: id as! Int)
-        print(person.id)
+        let person = Person()
+        let data = notification.userInfo
+        let id = data?["user_id"] as! Int
+        let email = data?["email"] as! String
+        let firstname = data?["firstname"] as! String
+        let lastname = data?["lastname"] as! String
+        let phone = data?["phone"] as! String
+        DataBaseHelper.clearActualPerson()
+        DataBaseHelper.setPerson(person: person, id: id, email: email, firstname: firstname, lastname: lastname, phone: phone, actual: true)
         performSegue(withIdentifier: "fromAuthorizationToListOfVehiclesSegue", sender: person)
     }
     
-    func getVehiclesCallback(_ notification: NSNotification){
-        
-        let data = notification.userInfo as! [String : Any]
-        let vehicles = data["data"]
-        print(vehicles!)
-    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         NotificationCenter.default.addObserver(self, selector: #selector(logInCallback(_:)), name: .logInCallback, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(getVehiclesCallback(_:)), name: .getVehiclesCallback, object: nil)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "fromAuthorizationToListOfVehiclesSegue"{
-            APIHelper.getListOfVehiclesRequest(person: person)
+            APIHelper.getListOfVehiclesRequest()
         }
     }
 

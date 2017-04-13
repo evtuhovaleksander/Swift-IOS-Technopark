@@ -110,7 +110,9 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "23"
-            endingLineNumber = "23">
+            endingLineNumber = "23"
+            landmarkName = "primaryKey()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -125,7 +127,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "41"
             endingLineNumber = "41"
-            landmarkName = "save(object:)"
+            landmarkName = "clearActualPerson()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -157,8 +159,86 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "18"
             endingLineNumber = "18"
-            landmarkName = "getPerson(email:)"
+            landmarkName = "setVehicle(person:json:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RAT/CrashCell.swift"
+            timestampString = "513532268.157342"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "CrashCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RAT.CrashCell.shortDecription.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
+                  moduleName = "RAT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kirill/Desktop/Swift-IOS-Technopark/RAT/RAT/CrashCell.swift"
+                  timestampString = "513532595.504862"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "27">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RAT.CrashCell.shortDecription.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
+                  moduleName = "RAT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kirill/Desktop/Swift-IOS-Technopark/RAT/RAT/CrashCell.swift"
+                  timestampString = "513532595.506942"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "42">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RAT.CrashCell.init (style : __C.UITableViewCellStyle, reuseIdentifier : Swift.Optional&lt;Swift.String&gt;) -&gt; RAT.CrashCell"
+                  moduleName = "RAT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kirill/Desktop/Swift-IOS-Technopark/RAT/RAT/CrashCell.swift"
+                  timestampString = "513532595.508756"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "146">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RAT.CrashCell.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;RAT.CrashCell&gt;"
+                  moduleName = "RAT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kirill/Desktop/Swift-IOS-Technopark/RAT/RAT/CrashCell.swift"
+                  timestampString = "513532595.510445"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "88">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

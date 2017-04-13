@@ -65,13 +65,15 @@ class APIHelper {
         print(json)
         let code = json["code"].int!
         if code == OK {
-            let data = json["data"].dictionary
+            let data = json["data"].dictionaryObject
             NotificationCenter.default.post(name: .logInCallback, object: nil, userInfo: data)
         }
     }
     
     
-    class func getListOfVehiclesRequest(person: Person) -> Void {
+    class func getListOfVehiclesRequest() -> Void {
+        
+        let person = DataBaseHelper.getPerson()
         
         let parameters: Parameters = [
             "user_id": person.id
@@ -82,11 +84,48 @@ class APIHelper {
     
     class func getListOfVehiclesOnSuccess(json: JSON) -> Void{
 
+        let code = json["code"].int!
+        if code == OK {
+            let data = json.dictionaryValue
+            NotificationCenter.default.post(name: .getVehiclesCallback, object: nil, userInfo: data)
+        }
+        
+    }
+    
+    class func getListOfActualCrashesRequest(vehicle: Vehicle) -> Void {
+        
+        let parameters: Parameters = [
+            "vehicle_id": vehicle.id
+        ]
+        
+        request(URL: GET_LIST_OF_ACTUAL_CRASHES_URL, method: .get, parameters: parameters, onSuccess: getListOfActualCrashesOnSuccess, onError: defaultOnError)
+    }
+    
+    class func getListOfActualCrashesOnSuccess(json: JSON) -> Void{
         print(json)
         let code = json["code"].int!
         if code == OK {
-            let data = json.dictionary
-            NotificationCenter.default.post(name: .getVehiclesCallback, object: nil, userInfo: data)
+            let data = json.dictionaryValue
+            NotificationCenter.default.post(name: .getListOfCrashesCallback, object: nil, userInfo: data)
+        }
+        
+    }
+    
+    class func getListOfHistoryCrashesRequest(vehicle: Vehicle) -> Void {
+        
+        let parameters: Parameters = [
+            "vehicle_id": vehicle.id
+        ]
+        
+        request(URL: GET_LIST_OF_HISTORY_CRASHES_URL, method: .get, parameters: parameters, onSuccess:getListOfHistoryCrashesOnSuccess, onError: defaultOnError)
+    }
+    
+    class func getListOfHistoryCrashesOnSuccess(json: JSON) -> Void{
+        print(json)
+        let code = json["code"].int!
+        if code == OK {
+            let data = json.dictionaryValue
+            NotificationCenter.default.post(name: .getListOfCrashesCallback, object: nil, userInfo: data)
         }
         
     }
@@ -120,24 +159,9 @@ class APIHelper {
 
     }
 
-       class func getListOfHistoryCrashesRequest(vehicle: Vehicle) -> Void {
-        
-        let parameters: Parameters = [
-            "vehicle_id": vehicle.id!
-        ]
-        
-        request(URL: GET_LIST_OF_HISTORY_CRASHES_URL, method: .get, parameters: parameters, onSuccess: defaultOnSuccess, onError: defaultOnError)
-    }
 
-    class func getListOfActualCrashesRequest(vehicle: Vehicle) -> Void {
-        
-        let parameters: Parameters = [
-            "vehicle_id": vehicle.id!
-        ]
-        
-        request(URL: GET_LIST_OF_ACTUAL_CRASHES_URL, method: .get, parameters: parameters, onSuccess: defaultOnSuccess, onError: defaultOnError)
-        
-    }
+
+
     
     class func editVehicleRequest(vehicle: Vehicle) -> Void {
         

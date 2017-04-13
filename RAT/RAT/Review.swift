@@ -11,4 +11,10 @@ import RealmSwift
 
 class Review: Object {
     
+    dynamic var id = 0
+    
+    override static func primaryKey() -> String? {
+        return "id"
+    }
+    
 }

@@ -18,7 +18,8 @@ class RegistrationViewController: UIViewController {
     @IBOutlet weak var lastnameTextField: UITextField!
     @IBOutlet weak var phoneTextField: UITextField!
     
-    var person = Person()
+    
+    let person = Person()
     
     @IBAction func signUp(_ sender: Any) {
        
@@ -40,7 +41,6 @@ class RegistrationViewController: UIViewController {
     }
     
     func signUpCallback(_ notification: NSNotification){
-        DataBaseHelper.save(object: person)
         APIHelper.logInRequest(person: person)
     }
     

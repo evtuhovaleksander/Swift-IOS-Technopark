@@ -17,7 +17,28 @@ class Vehicle: Object{
     dynamic var brand: String = ""
     dynamic var model: String = ""
     dynamic var year: String = ""
-    let historyCrashes = List<Crash>()
-    let actualCrashes = List<Crash>()
-
+    dynamic var owner: Person?
+    var crashes = LinkingObjects(fromType: Crash.self, property: "vehicle")
+    
+    override static func primaryKey() -> String? {
+        return "id"
+    }
+    
+    func getActualcrashes() -> [Crash] {
+        
+        func isActual(object: Crash) -> Bool {
+            return object.actual
+        }
+        
+        return crashes.filter(isActual)
+    }
+    
+    func getHistorycrashes() -> [Crash] {
+        
+        func isHistory(object: Crash) -> Bool {
+            return !object.actual
+        }
+        
+        return crashes.filter(isHistory)
+    }
 }
