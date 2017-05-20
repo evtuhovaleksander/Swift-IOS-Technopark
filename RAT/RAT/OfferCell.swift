@@ -14,6 +14,7 @@ class OfferCell: UITableViewCell {
     @IBOutlet weak var message: UILabel!
     @IBOutlet weak var price: UILabel!
     
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -95,7 +95,7 @@ class DataBaseHelper {
         offer.message = json["message"].stringValue
         offer.price = json["price"].intValue
         offer.id = json["id"].intValue
-        offer.crash = crash
+        offer.vehicle = nil
         offer.service = service
         offer.service!.id = json["service_id"].intValue
         offer.service!.name = json["service__name"].stringValue

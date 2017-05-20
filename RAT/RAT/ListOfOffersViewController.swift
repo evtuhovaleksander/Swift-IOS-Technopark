@@ -1,30 +1,31 @@
 //
-//  ListOfVehiclesViewController.swift
+//  ListOfOffersViewController.swift
 //  RAT
 //
-//  Created by Kirill on 3/30/17.
+//  Created by Алексаndr on 20.05.17.
 //  Copyright © 2017 RAT. All rights reserved.
 //
 
 import UIKit
 import SwiftyJSON
 
-class ListOfVehiclesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ListOfOffersViewController: UIViewController, UITableViewDelegate, UITableViewDataSource  {
 
-    @IBOutlet weak var listOfVehiclesTable: UITableView!
-    var person = Person()
     
+    @IBOutlet weak var listOfOffersTable: UITableView!
+    var person = Person()
+    var vehicle:Vehicle
     override func viewDidLoad() {
         super.viewDidLoad()
-        listOfVehiclesTable.dataSource = self
-        listOfVehiclesTable.delegate = self
-        listOfVehiclesTable.tableFooterView = UIView() // delete excess separators
-        NotificationCenter.default.addObserver(self, selector: #selector(getListsOfVehiclesAndCrashesCallback(_:)), name: .getListsOfVehiclesAndCrashesCallback, object: nil)
+        listOfOffersTable.dataSource = self
+        listOfOffersTable.delegate = self
+        listOfOffersTable.tableFooterView = UIView() // delete excess separators
+        NotificationCenter.default.addObserver(self, selector: #selector(getListsOfListsOfOffersAndServicesCallback(_:)), name: .getListsOfVehiclesAndCrashesCallback, object: nil)
         person = DataBaseHelper.getPerson()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return person.vehicles.count
+        return vehicle.offers.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -42,16 +43,16 @@ class ListOfVehiclesViewController: UIViewController, UITableViewDelegate, UITab
         APIHelper.getListOfActualCrashesRequest(vehicle: vehicle)
         self.performSegue(withIdentifier: "fromListOfVehicleToListOfCrashesSegue", sender: vehicle)
     }
- 
-//    func getVehiclesCallback(_ notification: NSNotification){
-//        let person = DataBaseHelper.getPerson()
-//        let data = notification.userInfo as! [String : JSON]
-//        let vehicles = data["data"]!.arrayValue
-//        for vehicle in vehicles {
-//            DataBaseHelper.setVehicle(person: person, json: vehicle)
-//        }
-//        self.listOfVehiclesTable.reloadData()
-//    }
+    
+    //    func getVehiclesCallback(_ notification: NSNotification){
+    //        let person = DataBaseHelper.getPerson()
+    //        let data = notification.userInfo as! [String : JSON]
+    //        let vehicles = data["data"]!.arrayValue
+    //        for vehicle in vehicles {
+    //            DataBaseHelper.setVehicle(person: person, json: vehicle)
+    //        }
+    //        self.listOfVehiclesTable.reloadData()
+    //    }
     
     func getListsOfVehiclesAndCrashesCallback(_ notification: NSNotification){
         print("callback aaaa")
@@ -82,6 +83,6 @@ class ListOfVehiclesViewController: UIViewController, UITableViewDelegate, UITab
         let destinationViewController = nav.viewControllers[0] as! ListOfCrashesViewController
         destinationViewController.vehicle = sender as! Vehicle
         destinationViewController.nowTypeCrash = .actual
-
+        
     }
 }
