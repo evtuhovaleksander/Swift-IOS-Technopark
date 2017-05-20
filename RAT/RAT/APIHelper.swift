@@ -13,7 +13,7 @@ import SwiftyJSON
 class APIHelper {
     
     
-    static let SERVER_IP="http://192.168.1.33:8000"
+    static let SERVER_IP="http://192.168.1.47:8000"
     
     static let SIGNUP_URL = "\(SERVER_IP)/api/signup"
     static let LOGIN_URL = "\(SERVER_IP)/api/signin"
@@ -23,7 +23,11 @@ class APIHelper {
     static let EDIT_VEHICLE_URL = "\(SERVER_IP)/api/edit_vehicle"
     static let GET_LIST_OF_HISTORY_CRASHES_URL = "\(SERVER_IP)/api/get_list_of_history_crashes"
     static let GET_LIST_OF_ACTUAL_CRASHES_URL = "\(SERVER_IP)/api/get_list_of_actual_crashes"
-    static let GET_LIST_OF_OFFERS = "\(SERVER_IP)/api/get_list_of_offers"
+    static let GET_LIST_OF_OFFERS_URL = "\(SERVER_IP)/api/get_list_of_offers"
+    static let GET_SERVICE_URL = "\(SERVER_IP)/api/get_service"
+    static let GET_SERVICE_REVIEWS_URL = "\(SERVER_IP)/api/get_service_reviews"
+    //hot download
+    static let GET_LISTS_OF_VEHICLES_AND_CRASHES = "\(SERVER_IP)/api/get_lists_of_vehicles_and_crashes"
     
     static let OK = 0
     static let ERROR = 1
@@ -129,6 +133,63 @@ class APIHelper {
         }
         
     }
+    
+    class func getListOfOffersRequest(crash: Crash) -> Void {
+        
+        let parameters: Parameters = [
+            "crash_id": crash.id
+        ]
+        
+        request(URL: GET_LIST_OF_OFFERS_URL, method: .get, parameters: parameters, onSuccess: getListOfOffersOnSuccess, onError: defaultOnError)
+    }
+    
+    class func getListOfOffersOnSuccess(json: JSON) -> Void{
+        print(json)
+        let code = json["code"].int!
+        if code == OK {
+            let data = json.dictionaryValue
+            NotificationCenter.default.post(name: .getListOfOffersCallback, object: nil, userInfo: data)
+        }
+    }
+    
+    class func getServiceRequest(offer: Offer) -> Void{
+        
+        let parameters: Parameters = [
+            "service_id": offer.service!.id
+        ]
+        
+        request(URL: GET_SERVICE_URL, method: .get, parameters: parameters, onSuccess: getServiceOnSuccess, onError: defaultOnError)
+
+    }
+    
+    class func getServiceOnSuccess(json: JSON) -> Void{
+        print(json)
+        let code = json["code"].int!
+        if code == OK {
+            let data = json.dictionaryValue
+            NotificationCenter.default.post(name: .getServiceCallback, object: nil, userInfo: data)
+        }
+    }
+    
+    class func getListOfReviewsRequest(offer: Offer) -> Void{
+        let parameters: Parameters = [
+            "service_id": offer.service!.id
+        ]
+        
+        request(URL: GET_SERVICE_REVIEWS_URL, method: .get, parameters: parameters, onSuccess: getListOfReviewsOnSuccess, onError: defaultOnError)
+
+    }
+    
+    class func getListOfReviewsOnSuccess(json: JSON) -> Void{
+        print(json)
+        let code = json["code"].int!
+        if code == OK {
+            let data = json.dictionaryValue
+            NotificationCenter.default.post(name: .getListOfReviewsCallback, object: nil, userInfo: data)
+        }
+    }
+    
+    
     /*
     class func editUserRequest() -> Void {
         
@@ -176,17 +237,33 @@ class APIHelper {
         
         request(URL: EDIT_VEHICLE_URL, method: .post, parameters: parameters, onSuccess: defaultOnSuccess, onError: defaultOnError)
     }
-
-    class func getListOfOffersRequest(crash: Crash) -> Void {
-        
-        let parameters: Parameters = [
-            "crash_id": crash.id
-        ]
-        
-        request(URL: GET_LIST_OF_OFFERS, method: .get, parameters: parameters, onSuccess: defaultOnSuccess, onError: defaultOnError)
-    }
     
     */
+    
+    class func getListsOfVehiclesAndCrashesRequest() -> Void {
+        
+        let person = DataBaseHelper.getPerson()
+        
+        let parameters: Parameters = [
+            "user_id": person.id
+        ]
+        
+        request(URL: GET_LISTS_OF_VEHICLES_AND_CRASHES, method: .get, parameters: parameters, onSuccess: getListsOfVehiclesAndCrashesOnSuccess, onError: defaultOnError)
+    }
+    
+    
+    class func getListsOfVehiclesAndCrashesOnSuccess(json: JSON) -> Void{
+        
+        let code = json["code"].int!
+        if code == OK {
+            let data = json.dictionaryValue
+            print(data)
+            NotificationCenter.default.post(name: .getListsOfVehiclesAndCrashesCallback, object: nil, userInfo: data)
+        }
+        
+    }
+    
+    
     class func defaultOnSuccess(json: JSON) -> Void{
         print(json)
     }

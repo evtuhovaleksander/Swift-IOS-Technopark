@@ -21,13 +21,12 @@ class ListOfCrashesViewController: UIViewController, UITableViewDataSource, UITa
     var vehicle = Vehicle()
     var actualCrashes: [Crash] = []
     var historyCrashes: [Crash] = []
-    var nowTypeCrash : TypeCrash = TypeCrash.actual
+    var nowTypeCrash : TypeCrash = .actual
     
     override func viewDidLoad() {
         super.viewDidLoad()
         listOfCrashesTable.dataSource = self
         listOfCrashesTable.delegate = self
-        // listOfCrashesTable.separatorStyle = .none // delete all separators
         listOfCrashesTable.tableFooterView = UIView() // delete excess separators
         NotificationCenter.default.addObserver(self, selector: #selector(getListOfCrashesCallback(_:)), name: .getListOfCrashesCallback, object: nil)
         actualCrashes = vehicle.getActualcrashes()
@@ -63,17 +62,25 @@ class ListOfCrashesViewController: UIViewController, UITableViewDataSource, UITa
         return cell
     }
     
-    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-        self.performSegue(withIdentifier: "fromListOfCrashesToCrashSegue", sender: nil) // transition
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let index = indexPath.row
+        var crash = Crash()
+        switch nowTypeCrash {
+        case .actual:
+            crash = actualCrashes[index]
+        case .history:
+            crash = historyCrashes[index]
+        }
+        APIHelper.getListOfOffersRequest(crash: crash)
+        self.performSegue(withIdentifier: "fromListOfCrashesToCrashSegue", sender: crash)
     }
     
-    /*
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // destination
-        let controller = segue.destination
-        controller.title = sender as? String
+        let destinationController = segue.destination as! CrashViewController
+        destinationController.crash = sender as! Crash
     }
-    */
+    
     
     func getListOfCrashesCallback(_ notification: NSNotification){
         
@@ -88,19 +95,6 @@ class ListOfCrashesViewController: UIViewController, UITableViewDataSource, UITa
         
     }
     
-    @IBAction func changeList(_ sender: Any) {
-        
-        switch chooseListOfCrashesSegmentedControl.selectedSegmentIndex
-        {
-        case 0:
-            nowTypeCrash = TypeCrash.actual
-        case 1:
-            nowTypeCrash = TypeCrash.history
-        default:
-            break;
-        }
-        self.listOfCrashesTable.reloadData()
- 
-    }
+
  
 }

@@ -7,4 +7,5 @@ target 'RAT' do
   pod 'Alamofire'
   pod 'SwiftyJSON'
   pod 'RealmSwift', '~> 2.5.0'
+  pod 'SwiftyVK', :git => 'https://github.com/WE-St0r/SwiftyVK.git'
 end

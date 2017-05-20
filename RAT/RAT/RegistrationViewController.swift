@@ -46,6 +46,26 @@ class RegistrationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+     
+        emailTextField.backgroundColor = UIColor(white: 1, alpha: 0)
+        emailTextField.borderStyle = UITextBorderStyle(rawValue: 0)!
+       
+        passwordTextField.backgroundColor = UIColor(white: 1, alpha: 0)
+        passwordTextField.borderStyle = UITextBorderStyle(rawValue: 0)!
+ 
+        repeatPasswordTextField.backgroundColor = UIColor(white: 1, alpha: 0)
+        repeatPasswordTextField.borderStyle = UITextBorderStyle(rawValue: 0)!
+        
+        phoneTextField.backgroundColor = UIColor(white: 1, alpha: 0)
+        phoneTextField.borderStyle = UITextBorderStyle(rawValue: 0)!
+        
+        lastnameTextField.backgroundColor = UIColor(white: 1, alpha: 0)
+        lastnameTextField.borderStyle = UITextBorderStyle(rawValue: 0)!
+        
+        firstnameTextField.backgroundColor = UIColor(white: 1, alpha: 0)
+        firstnameTextField.borderStyle = UITextBorderStyle(rawValue: 0)!
+        
         NotificationCenter.default.addObserver(self, selector: #selector(signUpCallback), name: .signUpCallback, object: nil)
+        
     }
 }
