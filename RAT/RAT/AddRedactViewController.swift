@@ -1,5 +1,5 @@
 //
-//  AddRedactVehicleViewController.swift
+//  AddRedactViewController.swift
 //  RAT
 //
 //  Created by Алексаndr on 21.05.17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AddRedactVehicleViewController: UIViewController {
+class AddRedactViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
