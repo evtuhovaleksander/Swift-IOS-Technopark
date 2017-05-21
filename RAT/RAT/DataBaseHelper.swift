@@ -26,7 +26,19 @@ class DataBaseHelper {
             }
         }
     }
-        
+    class func deleteOffers(vehicle:Vehicle,offerIds : [Int]){
+        let offers = vehicle.offers
+        for offer in offers{
+            let id = offer.id
+            if !(offerIds.contains(id))
+            {
+                try! realm.write {
+                    realm.delete(offer)
+                }
+            }
+        }
+    }
+    
     
     class func setVehicle(person: Person, json: JSON)-> Vehicle{
             let vehicle = Vehicle()
@@ -56,7 +68,10 @@ class DataBaseHelper {
         let predicate = NSPredicate(format: "actual == true")
         return realm.objects(Person.self).filter(predicate).first!
     }
-    
+    class func getVehicle(id:Int) -> Vehicle {
+        let predicate = NSPredicate(format: "id == \(id)")
+        return realm.objects(Vehicle.self).filter(predicate).first!
+    }
     
     class func clearActualPerson(){
         let persons = realm.objects(Person.self)
@@ -89,6 +104,9 @@ class DataBaseHelper {
         save(object: crash)
     }
     
+    
+    
+    /*
     class func setOffer(crash: Crash, json: JSON){
         let offer = Offer()
         let service = Service()
@@ -102,23 +120,51 @@ class DataBaseHelper {
         save(object: service)
         save(object: offer)
     }
+    */
     
-    class func setService(json: JSON){
+    class func setOffer(vehicle: Vehicle, json: JSON){
+        let offer = Offer()
+        offer.message = json["message"].stringValue
+        offer.price = json["price"].intValue
+        offer.id = json["id"].intValue
+        offer.date = json["date"].stringValue
+        offer.vehicle = vehicle
+        var jsonService = json["service"].arrayValue[0]
+        var service = setService(json: jsonService)
+        offer.service = service
+        save(object: offer)
+    }
+    
+    class func setService(json: JSON)->Service{
         let service = Service()
         service.address = json["address"].stringValue
         service.id = json["id"].intValue
         service.name = json["name"].stringValue
         service.phone = json["phone"].stringValue
+        service.email = json["email"].stringValue
+        
+        var jsonReviews = json["reviwes"].arrayValue
+        
+        var reviews:[Review]=[]
+        for jsonReview in jsonReviews{
+            reviews.append(setReview(service: service, json: jsonReview))
+        }
+        
         save(object: service)
+        return service
     }
     
-    class func setReview(service: Service, json: JSON){
+    class func setReview(service: Service, json: JSON)->Review{
         let review = Review()
         review.date = json["date"].stringValue
         review.id = json["id"].intValue
         review.text = json["text"].stringValue
+        review.firstname = json["firstname"].stringValue
+        review.lastname = json["lastname"].stringValue
         review.service = service
+        
         save(object: review)
+        return review
     }
     
     class func save(object: Object){

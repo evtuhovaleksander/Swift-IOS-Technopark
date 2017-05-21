@@ -14,7 +14,7 @@ class VehicleCell: UITableViewCell {
     @IBOutlet weak var brand: UILabel!
     @IBOutlet weak var number: UILabel!
     @IBOutlet weak var model: UILabel!
-    
+    //var vehicle:Vehicle?
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

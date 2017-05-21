@@ -14,6 +14,7 @@ class Offer: Object {
     dynamic var id: Int = 0
     dynamic var price: Int = 0
     dynamic var message: String = ""
+    dynamic var date: String = ""
     dynamic var isAvalible: Bool = false
     dynamic var isConfirmed: Bool = false
     dynamic var vehicle: Vehicle?

@@ -33,12 +33,17 @@ class ListOfVehiclesViewController: UIViewController, UITableViewDelegate, UITab
         cell.number.text = person.vehicles[index].number
         cell.brand.text = person.vehicles[index].brand
         cell.model.text = person.vehicles[index].model
+        //cell.vehicle = person.vehicles[index]
         return cell
     }
     
+    var sendingVehicle:Vehicle?
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let index = indexPath.row
-        let vehicle = person.vehicles[index]
+        //person=DataBaseHelper.getPerson()
+        var vehicle = person.vehicles[index]
+        vehicle = DataBaseHelper.getVehicle(id:person.vehicles[index].id)
+        sendingVehicle=vehicle
         APIHelper.getListOfActualCrashesRequest(vehicle: vehicle)
         self.performSegue(withIdentifier: "fromListOfVehicleToListOfCrashesSegue", sender: vehicle)
     }
@@ -77,7 +82,9 @@ class ListOfVehiclesViewController: UIViewController, UITableViewDelegate, UITab
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let barViewController = segue.destination as! VehicleTabBarController
-        barViewController.vehicle = sender as? Vehicle
+        let cell = sender as? VehicleCell
+        barViewController.vehicle = sendingVehicle
+        print("sending vehicle id \(sendingVehicle?.id)")
         let nav = barViewController.viewControllers![0] as! UINavigationController
         let destinationViewController = nav.viewControllers[0] as! ListOfCrashesViewController
         destinationViewController.vehicle = sender as! Vehicle

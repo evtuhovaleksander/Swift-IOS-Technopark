@@ -26,6 +26,7 @@ class APIHelper {
     static let GET_LIST_OF_OFFERS_URL = "\(SERVER_IP)/api/get_list_of_offers"
     static let GET_SERVICE_URL = "\(SERVER_IP)/api/get_service"
     static let GET_SERVICE_REVIEWS_URL = "\(SERVER_IP)/api/get_service_reviews"
+    static let SET_MARKET_MARKER_URL = "\(SERVER_IP)/api/set_market_marker"
     //hot download
     static let GET_LISTS_OF_VEHICLES_AND_CRASHES = "\(SERVER_IP)/api/get_lists_of_vehicles_and_crashes"
     static let GET_LISTS_OF_OFFERS_AND_SERVICES = "\(SERVER_IP)/api/get_lists_of_offers_and_services"
@@ -285,6 +286,30 @@ class APIHelper {
             let data = json.dictionaryValue
             print(data)
             NotificationCenter.default.post(name: .getListsOfOffersAndServicesCallback, object: nil, userInfo: data)
+        }
+        
+    }
+    
+    class func setMarketMarkerRequest(vehicle:Vehicle) -> Void {
+        let parameters: Parameters = [
+            "vehicle_id": vehicle.id,
+            "is_auction": vehicle.isAuction
+        ]
+        
+        request(URL: SET_MARKET_MARKER_URL, method: .get, parameters: parameters, onSuccess: setMarketMarkerOnSuccess, onError: defaultOnError)
+    }
+    
+    
+    class func setMarketMarkerOnSuccess(json: JSON) -> Void{
+        
+        let code = json["code"].int!
+        if code == OK {
+            //let data = json.dictionaryValue
+            //print(data)
+            //NotificationCenter.default.post(name: .getListsOfOffersAndServicesCallback, object: nil, userInfo: data)
+        }
+        else{
+            //throw eror of network????
         }
         
     }
