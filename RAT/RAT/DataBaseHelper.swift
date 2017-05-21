@@ -26,6 +26,15 @@ class DataBaseHelper {
             }
         }
     }
+    
+    class func deleteVehicle(vehicle:Vehicle){
+        
+        try! realm.write {
+            realm.delete(vehicle)
+        }
+        
+    }
+    
     class func deleteOffers(vehicle:Vehicle,offerIds : [Int]){
         let offers = vehicle.offers
         for offer in offers{
@@ -90,6 +99,9 @@ class DataBaseHelper {
             person.phone = phone
             person.actual = actual
             save(object: person)
+    }
+    class func setPerson(person: Person){
+        save(object: person)
     }
     
     class func setCrash(vehicle: Vehicle, json: JSON){

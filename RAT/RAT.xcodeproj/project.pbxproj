@@ -9,8 +9,9 @@
 /* Begin PBXBuildFile section */
 		0DC6CDD4515568D67F6614EE /* Pods_RAT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A34E6BECE7F6DFC49F93F745 /* Pods_RAT.framework */; };
 		552077761ED0357E005DE7E6 /* ListOfOffersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552077751ED0357E005DE7E6 /* ListOfOffersViewController.swift */; };
-		5520777E1ED152AA005DE7E6 /* AddRedactVehicleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5520777D1ED152AA005DE7E6 /* AddRedactVehicleViewController.swift */; };
 		552077821ED15B3C005DE7E6 /* PersonalDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552077811ED15B3C005DE7E6 /* PersonalDataViewController.swift */; };
+		55DDAD7B1ED1891200F2F313 /* AddRedactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DDAD7A1ED1891200F2F313 /* AddRedactViewController.swift */; };
+		55DDAD7D1ED1B17800F2F313 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DDAD7C1ED1B17800F2F313 /* ChatViewController.swift */; };
 		5D4A18671EBCBA9400678C91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D4A18661EBCBA9400678C91 /* Assets.xcassets */; };
 		5DAB0C4D1EB3300600AC1F77 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DAB0C4C1EB3300600AC1F77 /* MapKit.framework */; };
 		5DAB0C4F1EB3304600AC1F77 /* mapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DAB0C4E1EB3304600AC1F77 /* mapView.swift */; };
@@ -43,8 +44,9 @@
 
 /* Begin PBXFileReference section */
 		552077751ED0357E005DE7E6 /* ListOfOffersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListOfOffersViewController.swift; sourceTree = "<group>"; };
-		5520777D1ED152AA005DE7E6 /* AddRedactVehicleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRedactVehicleViewController.swift; sourceTree = "<group>"; };
 		552077811ED15B3C005DE7E6 /* PersonalDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalDataViewController.swift; sourceTree = "<group>"; };
+		55DDAD7A1ED1891200F2F313 /* AddRedactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRedactViewController.swift; sourceTree = "<group>"; };
+		55DDAD7C1ED1B17800F2F313 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		5CA389BAE570D8D13A9E1ECB /* Pods-RAT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RAT.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RAT/Pods-RAT.debug.xcconfig"; sourceTree = "<group>"; };
 		5D4A18661EBCBA9400678C91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5DAB0C4C1EB3300600AC1F77 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -124,8 +126,9 @@
 				5DAB0C4E1EB3304600AC1F77 /* mapView.swift */,
 				CA3F19CB1ECCF2DE00E0682C /* VehicleTabBarController.swift */,
 				552077751ED0357E005DE7E6 /* ListOfOffersViewController.swift */,
-				5520777D1ED152AA005DE7E6 /* AddRedactVehicleViewController.swift */,
 				552077811ED15B3C005DE7E6 /* PersonalDataViewController.swift */,
+				55DDAD7A1ED1891200F2F313 /* AddRedactViewController.swift */,
+				55DDAD7C1ED1B17800F2F313 /* ChatViewController.swift */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -313,10 +316,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5520777E1ED152AA005DE7E6 /* AddRedactVehicleViewController.swift in Sources */,
 				EDA390F61E94375C002B0C65 /* NotificationRouter.swift in Sources */,
 				EDCC4B7C1E8D6FCF00D94FB7 /* VehicleCell.swift in Sources */,
 				552077761ED0357E005DE7E6 /* ListOfOffersViewController.swift in Sources */,
+				55DDAD7B1ED1891200F2F313 /* AddRedactViewController.swift in Sources */,
 				EDB05D2D1E8BC37B00FFE86E /* Vehicle.swift in Sources */,
 				EDA929DE1E8C7FAB000D67BA /* Service.swift in Sources */,
 				EDBAEAC41E91AF73008BC298 /* APIHelper.swift in Sources */,
@@ -340,6 +343,7 @@
 				EDB05D2F1E8BD8CE00FFE86E /* Crash.swift in Sources */,
 				CA3F19CC1ECCF2DE00E0682C /* VehicleTabBarController.swift in Sources */,
 				5DAB0C4F1EB3304600AC1F77 /* mapView.swift in Sources */,
+				55DDAD7D1ED1B17800F2F313 /* ChatViewController.swift in Sources */,
 				ED22BB7F1E9FAB950084320F /* ReviewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

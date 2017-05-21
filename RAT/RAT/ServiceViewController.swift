@@ -23,17 +23,17 @@ class ServiceViewController: UIViewController {
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //return service.reviews.count
-        return 3
+        return service.reviews.count
+        //return 3
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = listOfReviewsTable.dequeueReusableCell(withIdentifier: "ReviewCell") as! ReviewCell
-        //let index = indexPath.row
+        let index = indexPath.row
         
-        //cell.reviewText.text = service.reviews[index].text
-        //cell.reviewDate.text = service.reviews[index].date
+        cell.reviewText.text = service.reviews[index].text
+        cell.reviewDate.text = service.reviews[index].date
         return cell
     }
     

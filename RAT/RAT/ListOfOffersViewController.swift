@@ -53,7 +53,7 @@ class ListOfOffersViewController: UIViewController, UITableViewDelegate, UITable
         let index = indexPath.row
         //let vehicle = person.vehicles[index]
         //APIHelper.getListOfActualCrashesRequest(vehicle: vehicle)
-        self.performSegue(withIdentifier: "fromListOfOffersToOfferTabBarSegue", sender: vehicle)
+        self.performSegue(withIdentifier: "fromListOfOffersToChat", sender: vehicle)
     }
     
 

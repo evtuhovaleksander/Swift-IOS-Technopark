@@ -9,7 +9,9 @@
 import UIKit
 
 class ChatViewController: UIViewController {
-
+    
+    var offer = Offer()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

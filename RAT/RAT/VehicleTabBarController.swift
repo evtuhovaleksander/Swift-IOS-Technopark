@@ -40,7 +40,7 @@ class VehicleTabBarController: UITabBarController {
             APIHelper.getListsOfOffersAndServicesRequest(vehicle:vehicle!)
         case 3:
             let nav = self.viewControllers![3] as! UINavigationController
-            let destinationViewController = nav.viewControllers[0] as! ListOfCrashesViewController
+            let destinationViewController = nav.viewControllers[0] as! AddRedactViewController
             destinationViewController.vehicle = vehicle!
         default: break
         }

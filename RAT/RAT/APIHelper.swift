@@ -19,14 +19,17 @@ class APIHelper {
     static let LOGIN_URL = "\(SERVER_IP)/api/signin"
     static let GET_LIST_OF_VEHICLES_URL = "\(SERVER_IP)/api/get_list_of_vehicles"
     static let EDIT_USER_URL = "\(SERVER_IP)/api/edit_user"
-    static let ADD_VEHICLE_URL = "\(SERVER_IP)/api/signin"
+    static let ADD_VEHICLE_URL = "\(SERVER_IP)/api/add_vehicle"
     static let EDIT_VEHICLE_URL = "\(SERVER_IP)/api/edit_vehicle"
+    static let DELETE_VEHICLE_URL = "\(SERVER_IP)/api/delete_vehicle"
     static let GET_LIST_OF_HISTORY_CRASHES_URL = "\(SERVER_IP)/api/get_list_of_history_crashes"
     static let GET_LIST_OF_ACTUAL_CRASHES_URL = "\(SERVER_IP)/api/get_list_of_actual_crashes"
     static let GET_LIST_OF_OFFERS_URL = "\(SERVER_IP)/api/get_list_of_offers"
     static let GET_SERVICE_URL = "\(SERVER_IP)/api/get_service"
     static let GET_SERVICE_REVIEWS_URL = "\(SERVER_IP)/api/get_service_reviews"
     static let SET_MARKET_MARKER_URL = "\(SERVER_IP)/api/set_market_marker"
+    
+    
     //hot download
     static let GET_LISTS_OF_VEHICLES_AND_CRASHES = "\(SERVER_IP)/api/get_lists_of_vehicles_and_crashes"
     static let GET_LISTS_OF_OFFERS_AND_SERVICES = "\(SERVER_IP)/api/get_lists_of_offers_and_services"
@@ -267,12 +270,13 @@ class APIHelper {
 
     
     
-    class func getListsOfOffersAndServicesRequest() -> Void {
+    class func getListsOfOffersAndServicesRequest(vehicle:Vehicle) -> Void {
         //remake
         let person = DataBaseHelper.getPerson()
         
         let parameters: Parameters = [
-            "user_id": person.id
+            "user_id": person.id,
+            "vehicle_id":vehicle.id
         ]
         
         request(URL: GET_LISTS_OF_OFFERS_AND_SERVICES, method: .get, parameters: parameters, onSuccess: getListsOfOffersAndServicesOnSuccess, onError: defaultOnError)
@@ -313,6 +317,133 @@ class APIHelper {
         }
         
     }
+    
+    
+    class func addVehiclesRequest(vehicle: Vehicle,user:Person) -> Void {
+        
+        let parameters: Parameters = [
+            "user_id": user.id,
+            "VIN": vehicle.VIN,
+            "number": vehicle.number,
+            "brand": vehicle.brand,
+            "model": vehicle.model,
+            "year": vehicle.year
+        ]
+        
+        request(URL: ADD_VEHICLE_URL, method: .post, parameters: parameters, onSuccess: addVehiclesOnSucsess, onError: defaultOnError)
+        
+    }
+    
+    class func addVehiclesOnSucsess(json: JSON) -> Void{
+        print(json)
+        let code = json["code"].int!
+        if code == OK {
+            let data = json["data"].dictionaryObject
+            NotificationCenter.default.post(name: .addVehicleCallback, object: nil,userInfo: data)
+        }
+        
+    }
+    
+    class func changeVehicleRequest(vehicle: Vehicle) -> Void {
+        print("changing vehicle with id=\(vehicle.id)")
+        let parameters: Parameters = [
+            "vehicle_id":vehicle.id,
+            "VIN": vehicle.VIN,
+            "number": vehicle.number,
+            "brand": vehicle.brand,
+            "model": vehicle.model,
+            "year": vehicle.year,
+            "is_auction": vehicle.isAuction
+        ]
+        
+        request(URL: EDIT_VEHICLE_URL, method: .post, parameters: parameters, onSuccess: changeVehicleOnSucsess, onError: defaultOnError)
+        
+    }
+    
+    class func changeVehicleOnSucsess(json: JSON) -> Void{
+        print(json)
+        let code = json["code"].int!
+        if code == OK {
+            NotificationCenter.default.post(name: .changeVehicleCallback, object: nil,userInfo: nil)
+        }
+        
+    }
+    
+    class func deleteVehicleRequest(vehicle: Vehicle) -> Void {
+        
+        let parameters: Parameters = [
+            "vehicle_id":vehicle.id
+        ]
+        
+        request(URL: DELETE_VEHICLE_URL, method: .post, parameters: parameters, onSuccess: deleteVehicleOnSucsess, onError: defaultOnError)
+        
+    }
+    
+    class func deleteVehicleOnSucsess(json: JSON) -> Void{
+        print(json)
+        let code = json["code"].int!
+        if code == OK {
+            NotificationCenter.default.post(name: .deleteVehicleCallback, object: nil,userInfo: nil)
+        }
+        
+    }
+
+
+    
+    class func editUserRequest(user:Person) -> Void {
+        
+        let parameters: Parameters = [
+            "user_id": user.id,
+            "email": user.email,
+            "password": user.password,
+            "firstname": user.firstname,
+            "lastname": user.lastname,
+            "phone": user.phone
+        ]
+        
+        request(URL: EDIT_USER_URL, method: .post, parameters: parameters, onSuccess: editUserOnSucsess, onError: defaultOnError)
+    }
+    
+    
+    
+    class func editUserOnSucsess(json: JSON) -> Void{
+        print(json)
+        let code = json["code"].int!
+        if code == OK {
+            
+            NotificationCenter.default.post(name: .editUserCallback, object: nil)
+        }
+        
+    }
+    
+    class func editVehicleRequest(vehicle: Vehicle) -> Void {
+        
+        let parameters: Parameters = [
+            "user_id": vehicle.id,
+            "VIN": vehicle.VIN,
+            "number": vehicle.number,
+            "brand": vehicle.brand,
+            "model": vehicle.model,
+            "year": vehicle.year
+        ]
+        
+        request(URL: EDIT_VEHICLE_URL, method: .post, parameters: parameters, onSuccess: editVehicleOnSucsess, onError: defaultOnError)
+        
+    }
+    
+    
+    class func editVehicleOnSucsess(json: JSON) -> Void{
+        print(json)
+        let code = json["code"].int!
+        if code == OK {
+            
+            NotificationCenter.default.post(name: .editVehicleCallback, object: nil)
+        }
+        
+    }
+    
+    
+    // else code
     
     class func defaultOnSuccess(json: JSON) -> Void{
         print(json)

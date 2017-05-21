@@ -33,6 +33,25 @@ class ListOfVehiclesViewController: UIViewController, UITableViewDelegate, UITab
         cell.number.text = person.vehicles[index].number
         cell.brand.text = person.vehicles[index].brand
         cell.model.text = person.vehicles[index].model
+        
+        if person.vehicles[index].crashes.count==0 {
+            cell.errorLabel.text="OK"
+            cell.errorLabel.textColor=UIColor.green
+        }
+        else{
+            cell.errorLabel.text="\(person.vehicles[index].crashes.count) erors"
+            cell.errorLabel.textColor=UIColor.red
+        }
+        
+        if person.vehicles[index].isAuction {
+            cell.marketLabel.text="Opened"
+            cell.marketLabel.textColor=UIColor.green
+        }
+        else{
+            cell.marketLabel.text="Closed"
+            cell.marketLabel.textColor=UIColor.red
+        }
+        
         //cell.vehicle = person.vehicles[index]
         return cell
     }
@@ -80,15 +99,22 @@ class ListOfVehiclesViewController: UIViewController, UITableViewDelegate, UITab
         listOfVehiclesTable.reloadData()
     }
     
+    @IBAction func refreshAction(_ sender: Any) {
+        APIHelper.getListsOfVehiclesAndCrashesRequest()
+    }
+    
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let barViewController = segue.destination as! VehicleTabBarController
-        let cell = sender as? VehicleCell
-        barViewController.vehicle = sendingVehicle
-        print("sending vehicle id \(sendingVehicle?.id)")
-        let nav = barViewController.viewControllers![0] as! UINavigationController
-        let destinationViewController = nav.viewControllers[0] as! ListOfCrashesViewController
-        destinationViewController.vehicle = sender as! Vehicle
-        destinationViewController.nowTypeCrash = .actual
+        if segue.identifier == "fromListOfVehicleToListOfCrashesSegue"{
+            let barViewController = segue.destination as! VehicleTabBarController
+            let cell = sender as? VehicleCell
+            barViewController.vehicle = sendingVehicle
+            print("sending vehicle id \(sendingVehicle?.id)")
+            let nav = barViewController.viewControllers![0] as! UINavigationController
+            let destinationViewController = nav.viewControllers[0] as! ListOfCrashesViewController
+            destinationViewController.vehicle = sender as! Vehicle
+            destinationViewController.nowTypeCrash = .actual
+        }
 
     }
 }
