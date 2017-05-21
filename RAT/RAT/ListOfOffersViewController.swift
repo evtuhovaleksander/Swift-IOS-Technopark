@@ -51,15 +51,15 @@ class ListOfOffersViewController: UIViewController, UITableViewDelegate, UITable
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let index = indexPath.row
-        //let vehicle = person.vehicles[index]
+        let sendOffer = vehicle!.offers[index]
         //APIHelper.getListOfActualCrashesRequest(vehicle: vehicle)
-        self.performSegue(withIdentifier: "fromListOfOffersToChat", sender: vehicle)
+        self.performSegue(withIdentifier: "fromListOfOffersToChat", sender: sendOffer)
     }
     
 
     
     func getListsOfOffersAndServicesCallback(_ notification: NSNotification){
-        let person = DataBaseHelper.getPerson()
+        //let person = DataBaseHelper.getPerson()
         
         let data = notification.userInfo as! [String : JSON]
         let jsonOffers = data["data"]!.arrayValue
@@ -71,19 +71,16 @@ class ListOfOffersViewController: UIViewController, UITableViewDelegate, UITable
         DataBaseHelper.deleteOffers(vehicle: vehicle!, offerIds: offerIDs)
         
         for jsonOffer in jsonOffers{
-            let offer = DataBaseHelper.setOffer(vehicle: vehicle!, json: jsonOffer)
+            _ = DataBaseHelper.setOffer(vehicle: vehicle!, json: jsonOffer)
         }
         listOfOffersTable.reloadData()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-       /* //gavno
-        let barViewController = segue.destination as! CrashTabBarController
-        barViewController.vehicle = sender as? Vehicle
-        let nav = barViewController.viewControllers![0] as! UINavigationController
-        let destinationViewController = nav.viewControllers[0] as! ListOfCrashesViewController
-        destinationViewController.vehicle = sender as! Vehicle
-        destinationViewController.nowTypeCrash = .actual
-        */
+        if segue.identifier == "fromListOfOffersToChat"{
+        let chatController = segue.destination as! ChatViewController
+            chatController.offer = (sender as? Offer)!}
+        
+        
     }
 }

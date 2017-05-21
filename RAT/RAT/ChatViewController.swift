@@ -22,16 +22,30 @@ class ChatViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func viewServiceInfoButtonAction(_ sender: UIButton) {
+        performSegue(withIdentifier: "ToServiceInfo", sender: nil)
     }
-    */
+    @IBAction func veiwConfirmButtonAction(_ sender: UIButton) {
+        performSegue(withIdentifier: "ToConfirm", sender: nil)
+    }
+    
+    
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "ToServiceInfo"{
+            let serviceController = segue.destination as! ServiceViewController
+            serviceController.service = offer.service!
+        }
+        else{
+            let confirmController = segue.destination as! ConfirmViewController
+            confirmController.offer = offer
+        }
+    }
+    
+        
+        
+    
 
 }

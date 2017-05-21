@@ -14,11 +14,17 @@ class ServiceViewController: UIViewController {
     @IBOutlet weak var serviceImage: UIImageView!
     @IBOutlet weak var serviceDescription: UITextView!
     @IBOutlet weak var listOfReviewsTable: UITableView!
+    @IBOutlet weak var serviceName: UILabel!
     
     var service = Service()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.listOfReviewsTable.reloadData()
+        serviceDescription.text = service.description
+        serviceName.text=service.name
+        print("found reviews \(service.reviews.count)")
+        //serviceImage.image = UIImage.
     }
     
     

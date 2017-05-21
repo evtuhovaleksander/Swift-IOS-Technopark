@@ -141,8 +141,10 @@ class DataBaseHelper {
         offer.id = json["id"].intValue
         offer.date = json["date"].stringValue
         offer.vehicle = vehicle
-        var jsonService = json["service"].arrayValue[0]
-        var service = setService(json: jsonService)
+        var service = nil
+        for jsonService in json["service"].arrayValue[0]{
+            service = setService(json: jsonService)
+        }
         offer.service = service
         save(object: offer)
     }
