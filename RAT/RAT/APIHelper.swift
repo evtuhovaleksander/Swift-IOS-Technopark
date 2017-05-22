@@ -33,6 +33,7 @@ class APIHelper {
     //hot download
     static let GET_LISTS_OF_VEHICLES_AND_CRASHES = "\(SERVER_IP)/api/get_lists_of_vehicles_and_crashes"
     static let GET_LISTS_OF_OFFERS_AND_SERVICES = "\(SERVER_IP)/api/get_lists_of_offers_and_services"
+    static let GET_LISTS_OF_HIGH_LOW_OFFERS_AND_SERVICES = "\(SERVER_IP)/api/get_lists_of_high_low_offers_and_services"
     
     static let OK = 0
     static let ERROR = 1
@@ -293,6 +294,32 @@ class APIHelper {
         }
         
     }
+    
+    class func getListsOfHighLowOffersAndServicesRequest(vehicle:Vehicle) -> Void {
+        //remake
+        let person = DataBaseHelper.getPerson()
+        
+        let parameters: Parameters = [
+            "user_id": person.id,
+            "vehicle_id":vehicle.id
+        ]
+        
+        request(URL: GET_LISTS_OF_HIGH_LOW_OFFERS_AND_SERVICES, method: .get, parameters: parameters, onSuccess: getListsOfHighLowOffersAndServicesOnSuccess, onError: defaultOnError)
+    }
+    
+    
+    class func getListsOfHighLowOffersAndServicesOnSuccess(json: JSON) -> Void{
+        
+        let code = json["code"].int!
+        if code == OK {
+            let data = json.dictionaryValue
+            print(data)
+            NotificationCenter.default.post(name: .getListsOfHighLowOffersAndServicesCallback, object: nil, userInfo: data)
+        }
+        
+    }
+    
+    
     
     class func setMarketMarkerRequest(vehicle:Vehicle) -> Void {
         let parameters: Parameters = [

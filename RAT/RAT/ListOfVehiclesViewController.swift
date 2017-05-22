@@ -34,12 +34,19 @@ class ListOfVehiclesViewController: UIViewController, UITableViewDelegate, UITab
         cell.brand.text = person.vehicles[index].brand
         cell.model.text = person.vehicles[index].model
         
-        if person.vehicles[index].crashes.count==0 {
+        var count = 0
+        for crash in person.vehicles[index].crashes{
+            if crash.actual{
+                count+=1
+            }
+        }
+        
+        if count==0 {
             cell.errorLabel.text="OK"
             cell.errorLabel.textColor=UIColor.green
         }
         else{
-            cell.errorLabel.text="\(person.vehicles[index].crashes.count) erors"
+            cell.errorLabel.text="\(count) erors"
             cell.errorLabel.textColor=UIColor.red
         }
         

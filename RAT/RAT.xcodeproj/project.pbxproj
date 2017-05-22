@@ -10,6 +10,12 @@
 		0DC6CDD4515568D67F6614EE /* Pods_RAT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A34E6BECE7F6DFC49F93F745 /* Pods_RAT.framework */; };
 		552077761ED0357E005DE7E6 /* ListOfOffersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552077751ED0357E005DE7E6 /* ListOfOffersViewController.swift */; };
 		552077821ED15B3C005DE7E6 /* PersonalDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552077811ED15B3C005DE7E6 /* PersonalDataViewController.swift */; };
+		553531C71ED2D87100A23445 /* HighOffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553531C61ED2D87100A23445 /* HighOffer.swift */; };
+		553531C91ED2D88100A23445 /* LowOffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553531C81ED2D88100A23445 /* LowOffer.swift */; };
+		553531CB1ED2E07B00A23445 /* ListOfHighOffersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553531CA1ED2E07B00A23445 /* ListOfHighOffersViewController.swift */; };
+		553531CD1ED2E0C700A23445 /* HighOfferCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553531CC1ED2E0C700A23445 /* HighOfferCell.swift */; };
+		553531CF1ED2E25E00A23445 /* LowOfferCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553531CE1ED2E25E00A23445 /* LowOfferCell.swift */; };
+		553531D11ED2E29600A23445 /* ListOfLowOffersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553531D01ED2E29600A23445 /* ListOfLowOffersViewController.swift */; };
 		55DDAD7B1ED1891200F2F313 /* AddRedactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DDAD7A1ED1891200F2F313 /* AddRedactViewController.swift */; };
 		55DDAD7D1ED1B17800F2F313 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DDAD7C1ED1B17800F2F313 /* ChatViewController.swift */; };
 		5D4A18671EBCBA9400678C91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D4A18661EBCBA9400678C91 /* Assets.xcassets */; };
@@ -45,6 +51,12 @@
 /* Begin PBXFileReference section */
 		552077751ED0357E005DE7E6 /* ListOfOffersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListOfOffersViewController.swift; sourceTree = "<group>"; };
 		552077811ED15B3C005DE7E6 /* PersonalDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalDataViewController.swift; sourceTree = "<group>"; };
+		553531C61ED2D87100A23445 /* HighOffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighOffer.swift; sourceTree = "<group>"; };
+		553531C81ED2D88100A23445 /* LowOffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LowOffer.swift; sourceTree = "<group>"; };
+		553531CA1ED2E07B00A23445 /* ListOfHighOffersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListOfHighOffersViewController.swift; sourceTree = "<group>"; };
+		553531CC1ED2E0C700A23445 /* HighOfferCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighOfferCell.swift; sourceTree = "<group>"; };
+		553531CE1ED2E25E00A23445 /* LowOfferCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LowOfferCell.swift; sourceTree = "<group>"; };
+		553531D01ED2E29600A23445 /* ListOfLowOffersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListOfLowOffersViewController.swift; sourceTree = "<group>"; };
 		55DDAD7A1ED1891200F2F313 /* AddRedactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRedactViewController.swift; sourceTree = "<group>"; };
 		55DDAD7C1ED1B17800F2F313 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		5CA389BAE570D8D13A9E1ECB /* Pods-RAT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RAT.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RAT/Pods-RAT.debug.xcconfig"; sourceTree = "<group>"; };
@@ -129,6 +141,8 @@
 				552077811ED15B3C005DE7E6 /* PersonalDataViewController.swift */,
 				55DDAD7A1ED1891200F2F313 /* AddRedactViewController.swift */,
 				55DDAD7C1ED1B17800F2F313 /* ChatViewController.swift */,
+				553531CA1ED2E07B00A23445 /* ListOfHighOffersViewController.swift */,
+				553531D01ED2E29600A23445 /* ListOfLowOffersViewController.swift */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -142,6 +156,8 @@
 				EDB05D301E8BD8F200FFE86E /* Offer.swift */,
 				EDA929DB1E8C7F97000D67BA /* Review.swift */,
 				EDA929DD1E8C7FAB000D67BA /* Service.swift */,
+				553531C61ED2D87100A23445 /* HighOffer.swift */,
+				553531C81ED2D88100A23445 /* LowOffer.swift */,
 			);
 			name = models;
 			sourceTree = "<group>";
@@ -178,6 +194,8 @@
 				EDAFF5FD1E7B3C630069F42E /* Info.plist */,
 				EDA8AE711E9EFA3B005BEC56 /* OfferCell.swift */,
 				ED22BB7E1E9FAB950084320F /* ReviewCell.swift */,
+				553531CC1ED2E0C700A23445 /* HighOfferCell.swift */,
+				553531CE1ED2E25E00A23445 /* LowOfferCell.swift */,
 			);
 			path = RAT;
 			sourceTree = "<group>";
@@ -317,6 +335,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDA390F61E94375C002B0C65 /* NotificationRouter.swift in Sources */,
+				553531D11ED2E29600A23445 /* ListOfLowOffersViewController.swift in Sources */,
 				EDCC4B7C1E8D6FCF00D94FB7 /* VehicleCell.swift in Sources */,
 				552077761ED0357E005DE7E6 /* ListOfOffersViewController.swift in Sources */,
 				55DDAD7B1ED1891200F2F313 /* AddRedactViewController.swift in Sources */,
@@ -324,8 +343,10 @@
 				EDA929DE1E8C7FAB000D67BA /* Service.swift in Sources */,
 				EDBAEAC41E91AF73008BC298 /* APIHelper.swift in Sources */,
 				EDD8A79C1E93DCE800CC57A1 /* DataBaseHelper.swift in Sources */,
+				553531C71ED2D87100A23445 /* HighOffer.swift in Sources */,
 				552077821ED15B3C005DE7E6 /* PersonalDataViewController.swift in Sources */,
 				EDA8AE721E9EFA3B005BEC56 /* OfferCell.swift in Sources */,
+				553531CF1ED2E25E00A23445 /* LowOfferCell.swift in Sources */,
 				EDCC4B781E8D26D900D94FB7 /* ListOfVehiclesViewController.swift in Sources */,
 				ED80EF6D1E7C8AD10066AD83 /* RegistrationViewController.swift in Sources */,
 				EDAFF5F41E7B3C630069F42E /* ViewController.swift in Sources */,
@@ -335,9 +356,12 @@
 				EDA929DC1E8C7F97000D67BA /* Review.swift in Sources */,
 				ED7017CA1E7D49FF00955C99 /* CrashCell.swift in Sources */,
 				ED7017C71E7D368F00955C99 /* ListOfCrashesViewController.swift in Sources */,
+				553531CB1ED2E07B00A23445 /* ListOfHighOffersViewController.swift in Sources */,
 				EDB05D311E8BD8F200FFE86E /* Offer.swift in Sources */,
 				ED97321D1E8AFCD200FCED3F /* Person.swift in Sources */,
 				CAF3811B1EC9270800DC559D /* VKHelper.swift in Sources */,
+				553531C91ED2D88100A23445 /* LowOffer.swift in Sources */,
+				553531CD1ED2E0C700A23445 /* HighOfferCell.swift in Sources */,
 				ED99E5A41E8550260039EBF7 /* ValidatorHelper.swift in Sources */,
 				ED22BB7B1E9F9FCE0084320F /* ServiceViewController.swift in Sources */,
 				EDB05D2F1E8BD8CE00FFE86E /* Crash.swift in Sources */,

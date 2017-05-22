@@ -77,11 +77,16 @@ class DataBaseHelper {
         let predicate = NSPredicate(format: "actual == true")
         return realm.objects(Person.self).filter(predicate).first!
     }
+    
     class func getVehicle(id:Int) -> Vehicle {
         let predicate = NSPredicate(format: "id == \(id)")
         return realm.objects(Vehicle.self).filter(predicate).first!
     }
     
+    class func getCrash(id:Int) -> Crash {
+        let predicate = NSPredicate(format: "id == \(id)")
+        return realm.objects(Crash.self).filter(predicate).first!
+    }
     class func clearActualPerson(){
         let persons = realm.objects(Person.self)
         for person in persons {
@@ -151,6 +156,44 @@ class DataBaseHelper {
         */
         offer.service = service
         save(object: offer)
+    }
+    
+    //new offer
+    
+    class func setHighOffer(vehicle: Vehicle, json: JSON){
+        let highOffer = HighOffer()
+        highOffer.message = json["message"].stringValue
+        highOffer.price = json["price"].intValue
+        highOffer.id = json["id"].intValue
+        highOffer.date = json["date"].stringValue
+        highOffer.vehicle = vehicle
+        
+        save(object: highOffer)
+        
+        var lowOffers:[LowOffer] = []
+        var jsonLowOffers = json["low_offers"].arrayValue
+        for jsonLowOffer in jsonLowOffers{
+            lowOffers.append(setLowOffer(highOffer: highOffer, json: jsonLowOffer))
+        }
+        
+        var service = setService(json: json["service"].arrayValue[0])
+        
+        highOffer.service = service
+        save(object: highOffer)
+    }
+    
+    class func setLowOffer(highOffer: HighOffer, json: JSON)-> LowOffer{
+        let lowOffer = LowOffer()
+        lowOffer.message = json["message"].stringValue
+        lowOffer.price = json["price"].intValue
+        lowOffer.id = json["id"].intValue
+        lowOffer.date = json["date"].stringValue
+        lowOffer.highOffer=highOffer
+        lowOffer.isAvalible = json["is_avalible"].boolValue
+        lowOffer.isChosen = json["is_chosen"].boolValue
+        lowOffer.crash = getCrash(id: json["crash_id"].intValue)
+        save(object: lowOffer)
+        return lowOffer
     }
     
     class func setService(json: JSON)->Service{

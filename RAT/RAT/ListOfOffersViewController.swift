@@ -21,7 +21,10 @@ class ListOfOffersViewController: UIViewController, UITableViewDelegate, UITable
         listOfOffersTable.dataSource = self
         listOfOffersTable.delegate = self
         listOfOffersTable.tableFooterView = UIView()
+        
         NotificationCenter.default.addObserver(self, selector: #selector(getListsOfOffersAndServicesCallback(_:)), name: .getListsOfOffersAndServicesCallback, object: nil)
+        
+        
         person = DataBaseHelper.getPerson()
         //print("recieved veh id \(vehicle?.id)")
     }
@@ -75,6 +78,8 @@ class ListOfOffersViewController: UIViewController, UITableViewDelegate, UITable
         }
         listOfOffersTable.reloadData()
     }
+    
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "fromListOfOffersToChat"{
