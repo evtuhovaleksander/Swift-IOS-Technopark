@@ -560,7 +560,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="8JF-nf-QkF">
-                        <barButtonItem key="leftBarButtonItem" title="Назад" id="NDa-hr-agD">
+                        <barButtonItem key="leftBarButtonItem" title="К списку машин" id="NDa-hr-agD">
                             <connections>
                                 <segue destination="gwa-t4-qYZ" kind="presentation" id="1WP-Lf-kZr"/>
                             </connections>
@@ -1205,7 +1205,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="8a7-Sm-oCh"/>
+                    <navigationItem key="navigationItem" id="8a7-Sm-oCh">
+                        <barButtonItem key="leftBarButtonItem" title="К списку машин" id="Dee-Wm-k0t">
+                            <connections>
+                                <segue destination="gwa-t4-qYZ" kind="presentation" id="wWU-pv-EkV"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="listOfOffersTable" destination="6C3-9Y-w2m" id="iVI-r8-gNP"/>
                         <segue destination="rNs-ya-138" kind="show" identifier="fromListOfOffersToChat" id="eoI-zE-EOv"/>
@@ -1213,7 +1219,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U5h-Ky-MHi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-598" y="1307"/>
+            <point key="canvasLocation" x="-943" y="1307"/>
         </scene>
         <!--Add/Redact vehicle controller-->
         <scene sceneID="IYp-Zk-w3h">
@@ -1334,7 +1340,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="iOw-m9-9FB">
-                        <barButtonItem key="leftBarButtonItem" title="Назад" id="DkY-fH-nOy">
+                        <barButtonItem key="leftBarButtonItem" title="К списку машин" id="DkY-fH-nOy">
                             <connections>
                                 <segue destination="gwa-t4-qYZ" kind="presentation" id="p9O-RX-wiC"/>
                             </connections>
@@ -1603,8 +1609,8 @@
         <image name="человечек" width="16" height="16"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="sER-pR-ZYW"/>
         <segue reference="47m-hW-D3i"/>
+        <segue reference="p9O-RX-wiC"/>
         <segue reference="L9T-Wn-3bV"/>
     </inferredMetricsTieBreakers>
 </document>
