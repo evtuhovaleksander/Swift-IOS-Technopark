@@ -13,7 +13,9 @@ import SwiftyJSON
 class APIHelper {
     
     
-    static let SERVER_IP="http://127.0.0.1:8000"
+    static let SERVER_IP="https://rat-django-toolchain.mybluemix.net"
+    //static let SERVER_IP="http://192.168.1.43:8000"
+    
     
     static let SIGNUP_URL = "\(SERVER_IP)/api/signup"
     static let LOGIN_URL = "\(SERVER_IP)/api/signin"

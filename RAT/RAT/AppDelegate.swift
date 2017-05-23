@@ -9,6 +9,7 @@
 import UIKit
 import RealmSwift
 import SwiftyVK
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -33,6 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Realm.Configuration.defaultConfiguration = config
         
         UIApplication.shared.statusBarStyle = .lightContent
+        FIRApp.configure()
         return true
     }
 

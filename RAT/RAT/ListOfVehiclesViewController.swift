@@ -114,9 +114,9 @@ class ListOfVehiclesViewController: UIViewController, UITableViewDelegate, UITab
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "fromListOfVehicleToListOfCrashesSegue"{
             let barViewController = segue.destination as! VehicleTabBarController
-            let cell = sender as? VehicleCell
+            _ = sender as? VehicleCell
             barViewController.vehicle = sendingVehicle
-            print("sending vehicle id \(sendingVehicle?.id)")
+            print("sending vehicle id \(String(describing: sendingVehicle?.id))")
             let nav = barViewController.viewControllers![0] as! UINavigationController
             let destinationViewController = nav.viewControllers[0] as! ListOfCrashesViewController
             destinationViewController.vehicle = sender as! Vehicle

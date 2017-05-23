@@ -22,6 +22,9 @@
 		5DAB0C4D1EB3300600AC1F77 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DAB0C4C1EB3300600AC1F77 /* MapKit.framework */; };
 		5DAB0C4F1EB3304600AC1F77 /* mapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DAB0C4E1EB3304600AC1F77 /* mapView.swift */; };
 		CA3F19CC1ECCF2DE00E0682C /* VehicleTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3F19CB1ECCF2DE00E0682C /* VehicleTabBarController.swift */; };
+		CA4C66801ED37DD8001453EF /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4C667F1ED37DD8001453EF /* UIImage+Gif.swift */; };
+		CADBBE231ED3762100809F86 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADBBE221ED3762000809F86 /* Channel.swift */; };
+		CADBBE251ED377DC00809F86 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CADBBE241ED377DC00809F86 /* GoogleService-Info.plist */; };
 		CAF3811B1EC9270800DC559D /* VKHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF3811A1EC9270800DC559D /* VKHelper.swift */; };
 		ED22BB7B1E9F9FCE0084320F /* ServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED22BB7A1E9F9FCE0084320F /* ServiceViewController.swift */; };
 		ED22BB7D1E9FA0560084320F /* ConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED22BB7C1E9FA0560084320F /* ConfirmViewController.swift */; };
@@ -54,8 +57,8 @@
 		553531C61ED2D87100A23445 /* HighOffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighOffer.swift; sourceTree = "<group>"; };
 		553531C81ED2D88100A23445 /* LowOffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LowOffer.swift; sourceTree = "<group>"; };
 		553531CA1ED2E07B00A23445 /* ListOfHighOffersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListOfHighOffersViewController.swift; sourceTree = "<group>"; };
-		553531CC1ED2E0C700A23445 /* HighOfferCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighOfferCell.swift; sourceTree = "<group>"; };
-		553531CE1ED2E25E00A23445 /* LowOfferCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LowOfferCell.swift; sourceTree = "<group>"; };
+		553531CC1ED2E0C700A23445 /* HighOfferCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HighOfferCell.swift; path = RAT/HighOfferCell.swift; sourceTree = "<group>"; };
+		553531CE1ED2E25E00A23445 /* LowOfferCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LowOfferCell.swift; path = RAT/LowOfferCell.swift; sourceTree = "<group>"; };
 		553531D01ED2E29600A23445 /* ListOfLowOffersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListOfLowOffersViewController.swift; sourceTree = "<group>"; };
 		55DDAD7A1ED1891200F2F313 /* AddRedactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRedactViewController.swift; sourceTree = "<group>"; };
 		55DDAD7C1ED1B17800F2F313 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
@@ -66,17 +69,20 @@
 		A34E6BECE7F6DFC49F93F745 /* Pods_RAT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RAT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5F7872392D345EFD764BB23 /* Pods-RAT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RAT.release.xcconfig"; path = "Pods/Target Support Files/Pods-RAT/Pods-RAT.release.xcconfig"; sourceTree = "<group>"; };
 		CA3F19CB1ECCF2DE00E0682C /* VehicleTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehicleTabBarController.swift; sourceTree = "<group>"; };
+		CA4C667F1ED37DD8001453EF /* UIImage+Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImage+Gif.swift"; path = "../../../../XcodeProjects/ChatChatFirebaseTutorial-start/ChatChat/UIImage+Gif.swift"; sourceTree = "<group>"; };
+		CADBBE221ED3762000809F86 /* Channel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		CADBBE241ED377DC00809F86 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../XcodeProjects/ChatChatFirebaseTutorial-start/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CAF3811A1EC9270800DC559D /* VKHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VKHelper.swift; sourceTree = "<group>"; };
 		ED22BB7A1E9F9FCE0084320F /* ServiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceViewController.swift; sourceTree = "<group>"; };
 		ED22BB7C1E9FA0560084320F /* ConfirmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmViewController.swift; sourceTree = "<group>"; };
-		ED22BB7E1E9FAB950084320F /* ReviewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewCell.swift; sourceTree = "<group>"; };
+		ED22BB7E1E9FAB950084320F /* ReviewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReviewCell.swift; path = RAT/ReviewCell.swift; sourceTree = "<group>"; };
 		ED7017C61E7D368F00955C99 /* ListOfCrashesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListOfCrashesViewController.swift; sourceTree = "<group>"; };
-		ED7017C91E7D49FF00955C99 /* CrashCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrashCell.swift; sourceTree = "<group>"; };
+		ED7017C91E7D49FF00955C99 /* CrashCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CrashCell.swift; path = RAT/CrashCell.swift; sourceTree = "<group>"; };
 		ED80EF6C1E7C8AD10066AD83 /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		ED97321C1E8AFCD200FCED3F /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		ED99E5A31E8550260039EBF7 /* ValidatorHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidatorHelper.swift; sourceTree = "<group>"; };
 		EDA390F51E94375C002B0C65 /* NotificationRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationRouter.swift; sourceTree = "<group>"; };
-		EDA8AE711E9EFA3B005BEC56 /* OfferCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfferCell.swift; sourceTree = "<group>"; };
+		EDA8AE711E9EFA3B005BEC56 /* OfferCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OfferCell.swift; path = RAT/OfferCell.swift; sourceTree = "<group>"; };
 		EDA929DB1E8C7F97000D67BA /* Review.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
 		EDA929DD1E8C7FAB000D67BA /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		EDAC87B91E9EDC5B001E63E2 /* CrashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrashViewController.swift; sourceTree = "<group>"; };
@@ -90,7 +96,7 @@
 		EDB05D301E8BD8F200FFE86E /* Offer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Offer.swift; sourceTree = "<group>"; };
 		EDBAEAC31E91AF73008BC298 /* APIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIHelper.swift; sourceTree = "<group>"; };
 		EDCC4B771E8D26D900D94FB7 /* ListOfVehiclesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListOfVehiclesViewController.swift; sourceTree = "<group>"; };
-		EDCC4B7B1E8D6FCF00D94FB7 /* VehicleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehicleCell.swift; sourceTree = "<group>"; };
+		EDCC4B7B1E8D6FCF00D94FB7 /* VehicleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VehicleCell.swift; path = RAT/VehicleCell.swift; sourceTree = "<group>"; };
 		EDD8A79B1E93DCE800CC57A1 /* DataBaseHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataBaseHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,6 +129,29 @@
 				B5F7872392D345EFD764BB23 /* Pods-RAT.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		CA4C66811ED37DFC001453EF /* layout */ = {
+			isa = PBXGroup;
+			children = (
+				EDAFF5F51E7B3C630069F42E /* Main.storyboard */,
+				EDA8AE711E9EFA3B005BEC56 /* OfferCell.swift */,
+				ED22BB7E1E9FAB950084320F /* ReviewCell.swift */,
+				553531CC1ED2E0C700A23445 /* HighOfferCell.swift */,
+				553531CE1ED2E25E00A23445 /* LowOfferCell.swift */,
+				EDCC4B7B1E8D6FCF00D94FB7 /* VehicleCell.swift */,
+				ED7017C91E7D49FF00955C99 /* CrashCell.swift */,
+			);
+			name = layout;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		CA4C66831ED37E50001453EF /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CA4C667F1ED37DD8001453EF /* UIImage+Gif.swift */,
+			);
+			name = extensions;
 			sourceTree = "<group>";
 		};
 		ED80EF6B1E7C7DEA0066AD83 /* controllers */ = {
@@ -158,6 +187,7 @@
 				EDA929DD1E8C7FAB000D67BA /* Service.swift */,
 				553531C61ED2D87100A23445 /* HighOffer.swift */,
 				553531C81ED2D88100A23445 /* LowOffer.swift */,
+				CADBBE221ED3762000809F86 /* Channel.swift */,
 			);
 			name = models;
 			sourceTree = "<group>";
@@ -183,19 +213,15 @@
 		EDAFF5F01E7B3C630069F42E /* RAT */ = {
 			isa = PBXGroup;
 			children = (
+				CA4C66831ED37E50001453EF /* extensions */,
+				CA4C66811ED37DFC001453EF /* layout */,
 				ED9732171E8AFB5D00FCED3F /* models */,
 				EDC04B101E7F23650065D62E /* helpers */,
 				ED80EF6B1E7C7DEA0066AD83 /* controllers */,
-				ED7017C91E7D49FF00955C99 /* CrashCell.swift */,
-				EDCC4B7B1E8D6FCF00D94FB7 /* VehicleCell.swift */,
 				5D4A18661EBCBA9400678C91 /* Assets.xcassets */,
 				EDAFF5F11E7B3C630069F42E /* AppDelegate.swift */,
-				EDAFF5F51E7B3C630069F42E /* Main.storyboard */,
 				EDAFF5FD1E7B3C630069F42E /* Info.plist */,
-				EDA8AE711E9EFA3B005BEC56 /* OfferCell.swift */,
-				ED22BB7E1E9FAB950084320F /* ReviewCell.swift */,
-				553531CC1ED2E0C700A23445 /* HighOfferCell.swift */,
-				553531CE1ED2E25E00A23445 /* LowOfferCell.swift */,
+				CADBBE241ED377DC00809F86 /* GoogleService-Info.plist */,
 			);
 			path = RAT;
 			sourceTree = "<group>";
@@ -276,6 +302,7 @@
 			files = (
 				5D4A18671EBCBA9400678C91 /* Assets.xcassets in Resources */,
 				EDAFF5F71E7B3C630069F42E /* Main.storyboard in Resources */,
+				CADBBE251ED377DC00809F86 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +365,7 @@
 				553531D11ED2E29600A23445 /* ListOfLowOffersViewController.swift in Sources */,
 				EDCC4B7C1E8D6FCF00D94FB7 /* VehicleCell.swift in Sources */,
 				552077761ED0357E005DE7E6 /* ListOfOffersViewController.swift in Sources */,
+				CA4C66801ED37DD8001453EF /* UIImage+Gif.swift in Sources */,
 				55DDAD7B1ED1891200F2F313 /* AddRedactViewController.swift in Sources */,
 				EDB05D2D1E8BC37B00FFE86E /* Vehicle.swift in Sources */,
 				EDA929DE1E8C7FAB000D67BA /* Service.swift in Sources */,
@@ -359,6 +387,7 @@
 				553531CB1ED2E07B00A23445 /* ListOfHighOffersViewController.swift in Sources */,
 				EDB05D311E8BD8F200FFE86E /* Offer.swift in Sources */,
 				ED97321D1E8AFCD200FCED3F /* Person.swift in Sources */,
+				CADBBE231ED3762100809F86 /* Channel.swift in Sources */,
 				CAF3811B1EC9270800DC559D /* VKHelper.swift in Sources */,
 				553531C91ED2D88100A23445 /* LowOffer.swift in Sources */,
 				553531CD1ED2E0C700A23445 /* HighOfferCell.swift in Sources */,
@@ -381,6 +410,7 @@
 				EDAFF5F61E7B3C630069F42E /* Base */,
 			);
 			name = Main.storyboard;
+			path = RAT;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

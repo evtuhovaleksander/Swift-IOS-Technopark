@@ -18,6 +18,7 @@ class ListOfOffersViewController: UIViewController, UITableViewDelegate, UITable
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         listOfOffersTable.dataSource = self
         listOfOffersTable.delegate = self
         listOfOffersTable.tableFooterView = UIView()
@@ -27,6 +28,11 @@ class ListOfOffersViewController: UIViewController, UITableViewDelegate, UITable
         
         person = DataBaseHelper.getPerson()
         //print("recieved veh id \(vehicle?.id)")
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.tabBarController?.tabBar.isHidden = false
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -85,7 +91,7 @@ class ListOfOffersViewController: UIViewController, UITableViewDelegate, UITable
         if segue.identifier == "fromListOfOffersToChat"{
         let chatController = segue.destination as! ChatViewController
             chatController.offer = (sender as? Offer)!}
-        
+            
         
     }
 }

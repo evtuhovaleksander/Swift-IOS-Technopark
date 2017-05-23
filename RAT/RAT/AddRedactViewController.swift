@@ -168,7 +168,7 @@ class AddRedactViewController: UIViewController {
         imagePickerController.sourceType = .photoLibrary
         
         // Make sure ViewController is notified when the user picks an image.
-        imagePickerController.delegate = self as! UIImagePickerControllerDelegate & UINavigationControllerDelegate
+        imagePickerController.delegate = self as? UIImagePickerControllerDelegate & UINavigationControllerDelegate
         present(imagePickerController, animated: true, completion: nil)
     }
 

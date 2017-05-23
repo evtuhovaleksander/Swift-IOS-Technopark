@@ -8,6 +8,7 @@
 
 import UIKit
 import SwiftyJSON
+import Firebase
 
 class ViewController: UIViewController {
 
@@ -42,7 +43,12 @@ class ViewController: UIViewController {
         let person = Person()
         person.email = "user@mail.ru"
         person.password = "qwerty"
-        
+        FIRAuth.auth()?.signInAnonymously(completion: { (user, error) in // 2
+            if let err = error { // 3
+                print(err.localizedDescription)
+                return
+            }
+        })
         APIHelper.logInRequest(person: person)
         
     }

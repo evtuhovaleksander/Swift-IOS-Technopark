@@ -147,7 +147,7 @@ class DataBaseHelper {
         offer.date = json["date"].stringValue
         offer.vehicle = vehicle
         
-        var service = setService(json: json["service"].arrayValue[0])
+        let service = setService(json: json["service"].arrayValue[0])
         /*
         var service:Service = nil
         for jsonService in json["service"].arrayValue[0]{
@@ -171,12 +171,12 @@ class DataBaseHelper {
         save(object: highOffer)
         
         var lowOffers:[LowOffer] = []
-        var jsonLowOffers = json["low_offers"].arrayValue
+        let jsonLowOffers = json["low_offers"].arrayValue
         for jsonLowOffer in jsonLowOffers{
             lowOffers.append(setLowOffer(highOffer: highOffer, json: jsonLowOffer))
         }
         
-        var service = setService(json: json["service"].arrayValue[0])
+        let service = setService(json: json["service"].arrayValue[0])
         
         highOffer.service = service
         save(object: highOffer)
@@ -206,7 +206,7 @@ class DataBaseHelper {
         service.serviceDescription = json["description"].stringValue
         save(object: service)
         
-        var jsonReviews = json["reviews"].arrayValue
+        let jsonReviews = json["reviews"].arrayValue
         
         var reviews:[Review]=[]
         for jsonReview in jsonReviews{
