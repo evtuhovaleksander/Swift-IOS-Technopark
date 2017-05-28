@@ -36,7 +36,7 @@ class DataBaseHelper {
     }
     
     class func deleteOffers(vehicle:Vehicle,offerIds : [Int]){
-        let offers = vehicle.offers
+        let offers = vehicle.highOffers
         for offer in offers{
             let id = offer.id
             if !(offerIds.contains(id))
@@ -45,6 +45,27 @@ class DataBaseHelper {
                     realm.delete(offer)
                 }
             }
+        }
+    }
+    
+    class func deleteHighOffers(vehicle:Vehicle,offerIds : [Int]){
+        let offers = vehicle.highOffers
+        for offer in offers{
+            let id = offer.id
+            //if !(offerIds.contains(id))
+            
+                
+                try! realm.write {
+                    var lowOffers = offer.lowOffers
+                    for lowOffer in lowOffers{
+                        
+                            realm.delete(lowOffer)
+                        
+                    }
+
+                    realm.delete(offer)
+                }
+            
         }
     }
     
@@ -161,14 +182,17 @@ class DataBaseHelper {
     //new offer
     
     class func setHighOffer(vehicle: Vehicle, json: JSON){
-        let highOffer = HighOffer()
+        var highOffer = HighOffer()
         highOffer.message = json["message"].stringValue
         highOffer.price = json["price"].intValue
         highOffer.id = json["id"].intValue
-        highOffer.date = json["date"].stringValue
+        highOffer.isConfirmed = json["is_confirmed"].boolValue
+        highOffer.isAvalible = json["is_avalible"].boolValue
+        //highOffer.date = json["date"].stringValue
         highOffer.vehicle = vehicle
+        var service = setService(json: json["service"].arrayValue[0])
+        highOffer.service = service
         
-        save(object: highOffer)
         
         var lowOffers:[LowOffer] = []
         let jsonLowOffers = json["low_offers"].arrayValue
@@ -176,11 +200,20 @@ class DataBaseHelper {
             lowOffers.append(setLowOffer(highOffer: highOffer, json: jsonLowOffer))
         }
         
-        let service = setService(json: json["service"].arrayValue[0])
         
-        highOffer.service = service
+        
+        
         save(object: highOffer)
+        
     }
+    
+    class func setHighOffer(offer:HighOffer,isConfirmed:Bool)->HighOffer{
+        try! realm.write {
+            offer.isConfirmed = isConfirmed
+        }
+        return offer
+    }
+
     
     class func setLowOffer(highOffer: HighOffer, json: JSON)-> LowOffer{
         let lowOffer = LowOffer()
@@ -193,6 +226,14 @@ class DataBaseHelper {
         lowOffer.isChosen = json["is_chosen"].boolValue
         lowOffer.crash = getCrash(id: json["crash_id"].intValue)
         save(object: lowOffer)
+        return lowOffer
+    }
+    
+    class func setLowOffer(lowOffer: LowOffer,isChosen: Bool)-> LowOffer{
+        try! realm.write {
+            lowOffer.isChosen = isChosen
+            //realm.add(low, update: true)
+        }
         return lowOffer
     }
     

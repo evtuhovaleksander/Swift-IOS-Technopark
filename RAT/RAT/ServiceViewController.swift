@@ -23,9 +23,11 @@ class ServiceViewController: UIViewController, UITableViewDataSource, UITableVie
     
     
     var service = Service()
+    var offer = HighOffer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //service=offer.service
         self.listOfReviewsTable.reloadData()
         serviceDescription.text = service.serviceDescription
         serviceName.text=service.name
@@ -72,6 +74,17 @@ class ServiceViewController: UIViewController, UITableViewDataSource, UITableVie
             _ = DataBaseHelper.setReview(service: service, json: review)
         }
         self.listOfReviewsTable.reloadData()
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toChat"{}
+        if segue.identifier == "toConfirm"{
+            let serviceController = segue.destination as! ListOfLowOffersViewController
+            serviceController.offer = offer
+        }
+        if segue.identifier == "toMap"{}
+        
         
     }
 }

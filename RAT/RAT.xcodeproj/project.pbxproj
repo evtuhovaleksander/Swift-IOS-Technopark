@@ -10,6 +10,7 @@
 		0DC6CDD4515568D67F6614EE /* Pods_RAT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A34E6BECE7F6DFC49F93F745 /* Pods_RAT.framework */; };
 		552077761ED0357E005DE7E6 /* ListOfOffersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552077751ED0357E005DE7E6 /* ListOfOffersViewController.swift */; };
 		552077821ED15B3C005DE7E6 /* PersonalDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552077811ED15B3C005DE7E6 /* PersonalDataViewController.swift */; };
+		5524BB211EDAA0E400F7CA87 /* LowOfferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5524BB201EDAA0E400F7CA87 /* LowOfferViewController.swift */; };
 		553531C71ED2D87100A23445 /* HighOffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553531C61ED2D87100A23445 /* HighOffer.swift */; };
 		553531C91ED2D88100A23445 /* LowOffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553531C81ED2D88100A23445 /* LowOffer.swift */; };
 		553531CB1ED2E07B00A23445 /* ListOfHighOffersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553531CA1ED2E07B00A23445 /* ListOfHighOffersViewController.swift */; };
@@ -54,6 +55,7 @@
 /* Begin PBXFileReference section */
 		552077751ED0357E005DE7E6 /* ListOfOffersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListOfOffersViewController.swift; sourceTree = "<group>"; };
 		552077811ED15B3C005DE7E6 /* PersonalDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalDataViewController.swift; sourceTree = "<group>"; };
+		5524BB201EDAA0E400F7CA87 /* LowOfferViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LowOfferViewController.swift; sourceTree = "<group>"; };
 		553531C61ED2D87100A23445 /* HighOffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighOffer.swift; sourceTree = "<group>"; };
 		553531C81ED2D88100A23445 /* LowOffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LowOffer.swift; sourceTree = "<group>"; };
 		553531CA1ED2E07B00A23445 /* ListOfHighOffersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListOfHighOffersViewController.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 				55DDAD7C1ED1B17800F2F313 /* ChatViewController.swift */,
 				553531CA1ED2E07B00A23445 /* ListOfHighOffersViewController.swift */,
 				553531D01ED2E29600A23445 /* ListOfLowOffersViewController.swift */,
+				5524BB201EDAA0E400F7CA87 /* LowOfferViewController.swift */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -397,6 +400,7 @@
 				CA3F19CC1ECCF2DE00E0682C /* VehicleTabBarController.swift in Sources */,
 				5DAB0C4F1EB3304600AC1F77 /* mapView.swift in Sources */,
 				55DDAD7D1ED1B17800F2F313 /* ChatViewController.swift in Sources */,
+				5524BB211EDAA0E400F7CA87 /* LowOfferViewController.swift in Sources */,
 				ED22BB7F1E9FAB950084320F /* ReviewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -28,9 +28,14 @@ class ListOfCrashesViewController: UIViewController, UITableViewDataSource, UITa
         listOfCrashesTable.dataSource = self
         listOfCrashesTable.delegate = self
         listOfCrashesTable.tableFooterView = UIView() // delete excess separators
+        /*
         NotificationCenter.default.addObserver(self, selector: #selector(getListOfCrashesCallback(_:)), name: .getListOfCrashesCallback, object: nil)
         actualCrashes = vehicle.getActualcrashes()
         historyCrashes = vehicle.getHistorycrashes()
+        */
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         
     }
     
@@ -90,7 +95,7 @@ class ListOfCrashesViewController: UIViewController, UITableViewDataSource, UITa
             destinationController.crash = sender as! Crash}
     }
     
-    
+    /*
     func getListOfCrashesCallback(_ notification: NSNotification){
         
         let data = notification.userInfo as! [String : JSON]
@@ -103,7 +108,7 @@ class ListOfCrashesViewController: UIViewController, UITableViewDataSource, UITa
         self.listOfCrashesTable.reloadData()
         
     }
-    
+    */
 
  
 }

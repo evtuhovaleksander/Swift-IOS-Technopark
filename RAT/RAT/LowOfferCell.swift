@@ -10,6 +10,15 @@ import UIKit
 
 class LowOfferCell: UITableViewCell {
 
+    @IBOutlet weak var codeLabel: UILabel!
+    @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var crashLabel: UILabel!
+    @IBOutlet weak var chosenSwitch: UISwitch!
+    @IBOutlet weak var naLabel: UILabel!
+    
+    
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
