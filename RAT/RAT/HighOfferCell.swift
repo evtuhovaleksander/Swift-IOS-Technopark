@@ -17,6 +17,7 @@ class HighOfferCell: UITableViewCell {
     @IBOutlet weak var isConfirmedLabel: UILabel!
     
     @IBOutlet weak var errorLabel: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
     
     
     

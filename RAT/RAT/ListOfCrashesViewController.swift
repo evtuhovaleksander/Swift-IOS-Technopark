@@ -36,7 +36,17 @@ class ListOfCrashesViewController: UIViewController, UITableViewDataSource, UITa
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        actualCrashes = []
+        historyCrashes = []
         
+        for crash in vehicle.crashes{
+            if crash.actual{
+                actualCrashes.append(crash)
+            }
+            else{
+                historyCrashes.append(crash)
+            }
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

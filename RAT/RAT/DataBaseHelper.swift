@@ -183,8 +183,9 @@ class DataBaseHelper {
     
     class func setHighOffer(vehicle: Vehicle, json: JSON){
         var highOffer = HighOffer()
-        highOffer.message = json["message"].stringValue
-        highOffer.price = json["price"].intValue
+        //highOffer.message = json["message"].stringValue
+        //highOffer.price = json["price"].intValue
+        highOffer.date = json["date"].stringValue
         highOffer.id = json["id"].intValue
         highOffer.isConfirmed = json["is_confirmed"].boolValue
         highOffer.isAvalible = json["is_avalible"].boolValue

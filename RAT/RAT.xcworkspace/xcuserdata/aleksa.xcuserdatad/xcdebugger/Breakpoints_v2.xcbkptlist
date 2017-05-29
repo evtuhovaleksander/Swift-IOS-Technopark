@@ -1093,7 +1093,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RAT/DataBaseHelper.swift"
-            timestampString = "517575117.328207"
+            timestampString = "517760017.636369"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "187"
@@ -1109,11 +1109,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RAT/DataBaseHelper.swift"
-            timestampString = "517578638.118798"
+            timestampString = "517760017.636369"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "189"
-            endingLineNumber = "189"
+            startingLineNumber = "190"
+            endingLineNumber = "190"
             landmarkName = "setHighOffer(vehicle:json:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1283,11 +1283,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RAT/ListOfHighOffersViewController.swift"
-            timestampString = "517575640.069737"
+            timestampString = "517760017.636369"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "92"
-            endingLineNumber = "92"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
             landmarkName = "getListsOfHighLowOffersAndServicesCallback(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1299,11 +1299,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RAT/ListOfHighOffersViewController.swift"
-            timestampString = "517575640.069737"
+            timestampString = "517760017.636369"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "111"
-            endingLineNumber = "111"
+            startingLineNumber = "117"
+            endingLineNumber = "117"
             landmarkName = "prepare(for:sender:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1379,11 +1379,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RAT/ListOfHighOffersViewController.swift"
-            timestampString = "517577796.709298"
+            timestampString = "517760017.636369"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "102"
-            endingLineNumber = "102"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
             landmarkName = "getListsOfHighLowOffersAndServicesCallback(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1395,11 +1395,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RAT/DataBaseHelper.swift"
-            timestampString = "517578638.118798"
+            timestampString = "517760017.636369"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "203"
-            endingLineNumber = "203"
+            startingLineNumber = "204"
+            endingLineNumber = "204"
             landmarkName = "setHighOffer(vehicle:json:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1411,11 +1411,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RAT/DataBaseHelper.swift"
-            timestampString = "517656203.478197"
+            timestampString = "517760017.636369"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "241"
-            endingLineNumber = "241"
+            startingLineNumber = "242"
+            endingLineNumber = "242"
             landmarkName = "setService(json:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1427,11 +1427,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RAT/DataBaseHelper.swift"
-            timestampString = "517578638.118798"
+            timestampString = "517760017.636369"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "205"
-            endingLineNumber = "205"
+            startingLineNumber = "206"
+            endingLineNumber = "206"
             landmarkName = "setHighOffer(vehicle:json:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1459,11 +1459,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RAT/DataBaseHelper.swift"
-            timestampString = "517578638.118798"
+            timestampString = "517760017.636369"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "195"
-            endingLineNumber = "195"
+            startingLineNumber = "196"
+            endingLineNumber = "196"
             landmarkName = "setHighOffer(vehicle:json:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1475,11 +1475,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RAT/DataBaseHelper.swift"
-            timestampString = "517578638.118798"
+            timestampString = "517760017.636369"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "206"
-            endingLineNumber = "206"
+            startingLineNumber = "207"
+            endingLineNumber = "207"
             landmarkName = "setHighOffer(vehicle:json:)"
             landmarkType = "7">
          </BreakpointContent>

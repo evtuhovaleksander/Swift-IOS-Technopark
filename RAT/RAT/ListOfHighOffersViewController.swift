@@ -62,7 +62,13 @@ class ListOfHighOffersViewController: UIViewController, UITableViewDelegate, UIT
                 cell.isConfirmedLabel.text = "not Confirmed"
                 cell.isConfirmedLabel.textColor = UIColor.red
             }
-            cell.priceLabel.text = String(vehicle!.highOffers[index].price)
+            var price = 0
+            for lowOffer in vehicle!.highOffers[index].lowOffers{
+                price += lowOffer.price
+            }
+            
+            cell.priceLabel.text = String(price)
+            cell.dateLabel.text = vehicle?.highOffers[index].date
             cell.serviceName.text = vehicle?.highOffers[index].service?.name
             
             //serviceNameotal = 0
