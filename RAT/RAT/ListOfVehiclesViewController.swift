@@ -11,8 +11,10 @@ import SwiftyJSON
 
 class ListOfVehiclesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    
     @IBOutlet weak var listOfVehiclesTable: UITableView!
     var person = Person()
+    var refreshControl: UIRefreshControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +23,11 @@ class ListOfVehiclesViewController: UIViewController, UITableViewDelegate, UITab
         listOfVehiclesTable.tableFooterView = UIView() // delete excess separators
         NotificationCenter.default.addObserver(self, selector: #selector(getListsOfVehiclesAndCrashesCallback(_:)), name: .getListsOfVehiclesAndCrashesCallback, object: nil)
         person = DataBaseHelper.getPerson()
+        
+        refreshControl = UIRefreshControl()
+        refreshControl.attributedTitle = NSAttributedString(string: "Идет обновление...")
+        refreshControl.addTarget(self, action: #selector(ListOfVehiclesViewController.refresh), for: .valueChanged)
+        listOfVehiclesTable.addSubview(refreshControl)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -33,6 +40,13 @@ class ListOfVehiclesViewController: UIViewController, UITableViewDelegate, UITab
         cell.number.text = person.vehicles[index].number
         cell.brand.text = person.vehicles[index].brand
         cell.model.text = person.vehicles[index].model
+        if let image = person.vehicles[index].picture as Data? {
+            cell.picture.image = UIImage.init(data: image)
+        }
+        else {
+            cell.picture.image = UIImage.init(named: "машина2")
+        }
+        
         
         var count = 0
         for crash in person.vehicles[index].crashes{
@@ -64,11 +78,12 @@ class ListOfVehiclesViewController: UIViewController, UITableViewDelegate, UITab
     }
     
     var sendingVehicle:Vehicle?
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let index = indexPath.row
         //person=DataBaseHelper.getPerson()
         var vehicle = person.vehicles[index]
-        vehicle = DataBaseHelper.getVehicle(id:person.vehicles[index].id)
+        vehicle = DataBaseHelper.getVehicle(id:person.vehicles[index].id)!
         sendingVehicle=vehicle
         APIHelper.getListOfActualCrashesRequest(vehicle: vehicle)
         self.performSegue(withIdentifier: "fromListOfVehicleToListOfCrashesSegue", sender: vehicle)
@@ -85,7 +100,6 @@ class ListOfVehiclesViewController: UIViewController, UITableViewDelegate, UITab
 //    }
     
     func getListsOfVehiclesAndCrashesCallback(_ notification: NSNotification){
-        print("callback aaaa")
         let person = DataBaseHelper.getPerson()
         let data = notification.userInfo as! [String : JSON]
         let jsonVehicles = data["data"]!.arrayValue
@@ -106,9 +120,7 @@ class ListOfVehiclesViewController: UIViewController, UITableViewDelegate, UITab
         listOfVehiclesTable.reloadData()
     }
     
-    @IBAction func refreshAction(_ sender: Any) {
-        APIHelper.getListsOfVehiclesAndCrashesRequest()
-    }
+ 
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -124,4 +136,13 @@ class ListOfVehiclesViewController: UIViewController, UITableViewDelegate, UITab
         }
 
     }
+    
+    func refresh() {
+
+        APIHelper.getListsOfVehiclesAndCrashesRequest()
+        print("----------refresh----------")
+        refreshControl.endRefreshing()
+    }
+    
+
 }

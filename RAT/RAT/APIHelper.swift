@@ -13,7 +13,7 @@ import SwiftyJSON
 class APIHelper {
     
     
-    //static let SERVER_IP="https://rat-django-toolchain.mybluemix.net"
+    //static let SERVER_IP="https://bmsturat.herokuapp.com"
     static let SERVER_IP="http://127.0.0.1:8000"
     
     
@@ -472,13 +472,13 @@ class APIHelper {
         
     }
     
-    
     class func updateHighOfferRequest(offer: HighOffer) -> Void {
         for lowOffer in offer.lowOffers{
             let parameters: Parameters = [
                 "id": lowOffer.id,
                 "is_chosen": lowOffer.isChosen
             ]
+            print(parameters)
             request(URL: UPDATE_LOW_OFFER, method: .post, parameters: parameters, onSuccess: updateHighOfferOnSucsess, onError: defaultOnError)
         }
         let parameters: Parameters = [
@@ -497,10 +497,10 @@ class APIHelper {
         }
     }
     
-    
+    // else code
     
     class func defaultOnSuccess(json: JSON) -> Void{
-        print(json)
+        //print(json)
     }
     
     class func defaultOnError(error: Any) -> Void {

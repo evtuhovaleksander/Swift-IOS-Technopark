@@ -61,15 +61,7 @@ class ChatViewController: JSQMessagesViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        if segue.identifier == "ToServiceInfo"{
-            let serviceController = segue.destination as! ServiceViewController
-            serviceController.service = offer.service!
-        }
-        else{
-            let confirmController = segue.destination as! ConfirmViewController
-            confirmController.offer = offer
-        }
-    }
+           }
     
         
     override func collectionView(_ collectionView: JSQMessagesCollectionView!, messageDataForItemAt indexPath: IndexPath!) -> JSQMessageData! {

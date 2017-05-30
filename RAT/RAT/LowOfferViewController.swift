@@ -11,7 +11,7 @@ import UIKit
 class LowOfferViewController: UIViewController {
     
     var offer = LowOffer()
-        
+    
     @IBOutlet weak var codeLabel: UILabel!
     @IBOutlet weak var crashLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!

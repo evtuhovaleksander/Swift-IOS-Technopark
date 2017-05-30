@@ -170,11 +170,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RAT/APIHelper.swift"
-            timestampString = "517656203.478197"
+            timestampString = "517050613.893649"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "75"
-            endingLineNumber = "75"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
             landmarkName = "logInRequest(person:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -186,13 +186,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RAT/APIHelper.swift"
-            timestampString = "517656203.478197"
+            timestampString = "517050613.893649"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
-            landmarkName = "APIHelper"
-            landmarkType = "3">
+            startingLineNumber = "75"
+            endingLineNumber = "75"
+            landmarkName = "logInRequest(person:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -369,84 +369,6 @@
             endingLineNumber = "22"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RAT/OfferCell.swift"
-            timestampString = "516967313.73398"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "14"
-            endingLineNumber = "14"
-            landmarkName = "OfferCell"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "RAT.OfferCell.price.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
-                  moduleName = "RAT"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/aleksa/os/Swift-IOS-Technopark/RAT/RAT/OfferCell.swift"
-                  timestampString = "516976940.714009"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "27">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "RAT.OfferCell.price.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
-                  moduleName = "RAT"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/aleksa/os/Swift-IOS-Technopark/RAT/RAT/OfferCell.swift"
-                  timestampString = "516976940.718432"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "42">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "RAT.OfferCell.init (style : __C.UITableViewCellStyle, reuseIdentifier : Swift.Optional&lt;Swift.String&gt;) -&gt; RAT.OfferCell"
-                  moduleName = "RAT"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/aleksa/os/Swift-IOS-Technopark/RAT/RAT/OfferCell.swift"
-                  timestampString = "516976940.721335"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "149">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "RAT.OfferCell.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;RAT.OfferCell&gt;"
-                  moduleName = "RAT"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/aleksa/os/Swift-IOS-Technopark/RAT/RAT/OfferCell.swift"
-                  timestampString = "516976940.724391"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "88">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1029,11 +951,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RAT/APIHelper.swift"
-            timestampString = "517656203.478197"
+            timestampString = "517057025.859719"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "351"
-            endingLineNumber = "351"
+            startingLineNumber = "350"
+            endingLineNumber = "350"
             landmarkName = "APIHelper"
             landmarkType = "3">
          </BreakpointContent>
@@ -1077,12 +999,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RAT/DataBaseHelper.swift"
-            timestampString = "517575117.328207"
+            timestampString = "517063605.70935"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "178"
-            endingLineNumber = "178"
-            landmarkName = "setOffer(vehicle:json:)"
+            startingLineNumber = "157"
+            endingLineNumber = "157"
+            landmarkName = "setCrash(vehicle:json:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1093,13 +1015,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RAT/DataBaseHelper.swift"
-            timestampString = "517760017.636369"
+            timestampString = "517064150.193403"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "187"
-            endingLineNumber = "187"
-            landmarkName = "setHighOffer(vehicle:json:)"
-            landmarkType = "7">
+            startingLineNumber = "166"
+            endingLineNumber = "166"
+            landmarkName = "DataBaseHelper"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1109,13 +1031,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RAT/DataBaseHelper.swift"
-            timestampString = "517760017.636369"
+            timestampString = "517064515.103789"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "190"
-            endingLineNumber = "190"
-            landmarkName = "setHighOffer(vehicle:json:)"
-            landmarkType = "7">
+            startingLineNumber = "167"
+            endingLineNumber = "167"
+            landmarkName = "DataBaseHelper"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1124,154 +1046,74 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "RAT/APIHelper.swift"
-            timestampString = "517656203.478197"
+            filePath = "RAT/ListOfLowOffersViewController.swift"
+            timestampString = "517839462.090397"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "320"
-            endingLineNumber = "320"
-            landmarkName = "getListsOfHighLowOffersAndServicesOnSuccess(json:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RAT/APIHelper.swift"
-            timestampString = "517656203.478197"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "310"
-            endingLineNumber = "310"
-            landmarkName = "getListsOfHighLowOffersAndServicesRequest(vehicle:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RAT/APIHelper.swift"
-            timestampString = "517656203.478197"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "316"
-            endingLineNumber = "316"
-            landmarkName = "getListsOfHighLowOffersAndServicesOnSuccess(json:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RAT/ListOfHighOffersViewController.swift"
-            timestampString = "517573328.019588"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RAT/ListOfHighOffersViewController.swift"
-            timestampString = "517573333.689957"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
-            landmarkName = "viewWillAppear(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RAT/ListOfHighOffersViewController.swift"
-            timestampString = "517573832.03736"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
-            landmarkName = "ListOfHighOffersViewController"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "ListOfLowOffersViewController"
             landmarkType = "3">
             <Locations>
                <Location
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "RAT.ListOfHighOffersViewController.person.getter : RAT.Person"
+                  symbolName = "RAT.ListOfLowOffersViewController.listOfOffersTable.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UITableView&gt;"
                   moduleName = "RAT"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/aleksa/os/Swift-IOS-Technopark/RAT/RAT/ListOfHighOffersViewController.swift"
-                  timestampString = "517574323.816138"
+                  urlString = "file:///Users/aleksa/os/ns/Swift-IOS-Technopark/RAT/RAT/ListOfLowOffersViewController.swift"
+                  timestampString = "517841494.562304"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "17"
-                  endingLineNumber = "17"
-                  offsetFromSymbolStart = "35">
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "27">
                </Location>
                <Location
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "RAT.ListOfHighOffersViewController.person.setter : RAT.Person"
+                  symbolName = "RAT.ListOfLowOffersViewController.listOfOffersTable.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UITableView&gt;"
                   moduleName = "RAT"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/aleksa/os/Swift-IOS-Technopark/RAT/RAT/ListOfHighOffersViewController.swift"
-                  timestampString = "517574323.82053"
+                  urlString = "file:///Users/aleksa/os/ns/Swift-IOS-Technopark/RAT/RAT/ListOfLowOffersViewController.swift"
+                  timestampString = "517841494.566072"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "17"
-                  endingLineNumber = "17"
-                  offsetFromSymbolStart = "65">
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "42">
                </Location>
                <Location
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "RAT.ListOfHighOffersViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; RAT.ListOfHighOffersViewController"
+                  symbolName = "RAT.ListOfLowOffersViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; RAT.ListOfLowOffersViewController"
                   moduleName = "RAT"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/aleksa/os/Swift-IOS-Technopark/RAT/RAT/ListOfHighOffersViewController.swift"
-                  timestampString = "517574323.825403"
+                  urlString = "file:///Users/aleksa/os/ns/Swift-IOS-Technopark/RAT/RAT/ListOfLowOffersViewController.swift"
+                  timestampString = "517841494.570714"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "17"
-                  endingLineNumber = "17"
-                  offsetFromSymbolStart = "141">
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "70">
                </Location>
                <Location
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "RAT.ListOfHighOffersViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;RAT.ListOfHighOffersViewController&gt;"
+                  symbolName = "RAT.ListOfLowOffersViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;RAT.ListOfLowOffersViewController&gt;"
                   moduleName = "RAT"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/aleksa/os/Swift-IOS-Technopark/RAT/RAT/ListOfHighOffersViewController.swift"
-                  timestampString = "517574323.829892"
+                  urlString = "file:///Users/aleksa/os/ns/Swift-IOS-Technopark/RAT/RAT/ListOfLowOffersViewController.swift"
+                  timestampString = "517841494.575329"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "17"
-                  endingLineNumber = "17"
-                  offsetFromSymbolStart = "73">
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "31">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -1282,221 +1124,184 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "RAT/ListOfHighOffersViewController.swift"
-            timestampString = "517760017.636369"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "98"
-            endingLineNumber = "98"
-            landmarkName = "getListsOfHighLowOffersAndServicesCallback(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RAT/ListOfHighOffersViewController.swift"
-            timestampString = "517760017.636369"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "117"
-            endingLineNumber = "117"
-            landmarkName = "prepare(for:sender:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RAT/ListOfHighOffersViewController.swift"
-            timestampString = "517573854.606505"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
-            landmarkName = "tableView(_:cellForRowAt:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RAT/APIHelper.swift"
-            timestampString = "517656203.478197"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "507"
-            endingLineNumber = "507"
-            landmarkName = "defaultOnError(error:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RAT/DataBaseHelper.swift"
-            timestampString = "517575117.328207"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
-            landmarkName = "deleteHighOffers(vehicle:offerIds:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RAT/DataBaseHelper.swift"
-            timestampString = "517577790.050064"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
-            landmarkName = "deleteHighOffers(vehicle:offerIds:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RAT/ListOfHighOffersViewController.swift"
-            timestampString = "517760017.636369"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "108"
-            endingLineNumber = "108"
-            landmarkName = "getListsOfHighLowOffersAndServicesCallback(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RAT/DataBaseHelper.swift"
-            timestampString = "517760017.636369"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "204"
-            endingLineNumber = "204"
-            landmarkName = "setHighOffer(vehicle:json:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RAT/DataBaseHelper.swift"
-            timestampString = "517760017.636369"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "242"
-            endingLineNumber = "242"
-            landmarkName = "setService(json:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RAT/DataBaseHelper.swift"
-            timestampString = "517760017.636369"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "206"
-            endingLineNumber = "206"
-            landmarkName = "setHighOffer(vehicle:json:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RAT/DataBaseHelper.swift"
-            timestampString = "517578136.894524"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "70"
-            endingLineNumber = "70"
-            landmarkName = "deleteHighOffers(vehicle:offerIds:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RAT/DataBaseHelper.swift"
-            timestampString = "517760017.636369"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "196"
-            endingLineNumber = "196"
-            landmarkName = "setHighOffer(vehicle:json:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RAT/DataBaseHelper.swift"
-            timestampString = "517760017.636369"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "207"
-            endingLineNumber = "207"
-            landmarkName = "setHighOffer(vehicle:json:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "RAT/ListOfLowOffersViewController.swift"
-            timestampString = "517656203.478197"
+            timestampString = "517839844.483012"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "129"
-            endingLineNumber = "129"
-            landmarkName = "prepare(for:sender:)"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "ListOfLowOffersViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RAT.ListOfLowOffersViewController.person.getter : RAT.Person"
+                  moduleName = "RAT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aleksa/os/ns/Swift-IOS-Technopark/RAT/RAT/ListOfLowOffersViewController.swift"
+                  timestampString = "517841494.598883"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "35">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RAT.ListOfLowOffersViewController.person.setter : RAT.Person"
+                  moduleName = "RAT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aleksa/os/ns/Swift-IOS-Technopark/RAT/RAT/ListOfLowOffersViewController.swift"
+                  timestampString = "517841494.602405"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "65">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RAT.ListOfLowOffersViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; RAT.ListOfLowOffersViewController"
+                  moduleName = "RAT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aleksa/os/ns/Swift-IOS-Technopark/RAT/RAT/ListOfLowOffersViewController.swift"
+                  timestampString = "517841494.605755"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "448">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RAT.ListOfLowOffersViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;RAT.ListOfLowOffersViewController&gt;"
+                  moduleName = "RAT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aleksa/os/ns/Swift-IOS-Technopark/RAT/RAT/ListOfLowOffersViewController.swift"
+                  timestampString = "517841494.611061"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "338">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LowOfferCell.swift"
+            timestampString = "517840942.247797"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "LowOfferCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RAT.LowOfferCell.__deallocating_deinit"
+                  moduleName = "RAT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aleksa/os/ns/Swift-IOS-Technopark/RAT/LowOfferCell.swift"
+                  timestampString = "517841720.739448"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RAT.LowOfferCell.init (style : __C.UITableViewCellStyle, reuseIdentifier : Swift.Optional&lt;Swift.String&gt;) -&gt; RAT.LowOfferCell"
+                  moduleName = "RAT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aleksa/os/ns/Swift-IOS-Technopark/RAT/LowOfferCell.swift"
+                  timestampString = "517841720.74827"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "70">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RAT.LowOfferCell.__allocating_init (style : __C.UITableViewCellStyle, reuseIdentifier : Swift.Optional&lt;Swift.String&gt;) -&gt; RAT.LowOfferCell"
+                  moduleName = "RAT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aleksa/os/ns/Swift-IOS-Technopark/RAT/LowOfferCell.swift"
+                  timestampString = "517841720.75178"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "23">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RAT.LowOfferCell.__allocating_init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;RAT.LowOfferCell&gt;"
+                  moduleName = "RAT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aleksa/os/ns/Swift-IOS-Technopark/RAT/LowOfferCell.swift"
+                  timestampString = "517841720.755674"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RAT.LowOfferCell.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;RAT.LowOfferCell&gt;"
+                  moduleName = "RAT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aleksa/os/ns/Swift-IOS-Technopark/RAT/LowOfferCell.swift"
+                  timestampString = "517841720.759567"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "31">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RAT/DataBaseHelper.swift"
+            timestampString = "517841994.633846"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "252"
+            endingLineNumber = "252"
+            landmarkName = "setLowOffer(lowOffer:isChosen:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

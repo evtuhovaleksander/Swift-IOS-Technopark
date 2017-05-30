@@ -8,7 +8,7 @@
 
 import Foundation
 import RealmSwift
-import Alamofire
+
 class LowOffer: Object {
     
     dynamic var id: Int = 0
@@ -23,6 +23,4 @@ class LowOffer: Object {
     override static func primaryKey() -> String? {
         return "id"
     }
-    
-    
 }

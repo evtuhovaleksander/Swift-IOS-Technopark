@@ -9,7 +9,7 @@
 import UIKit
 
 class HighOfferCell: UITableViewCell {
-
+    
     
     @IBOutlet weak var serviceName: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
@@ -25,11 +25,11 @@ class HighOfferCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
         // Configure the view for the selected state
     }
-
+    
 }

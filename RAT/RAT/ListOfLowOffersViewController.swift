@@ -18,7 +18,7 @@ class ListOfLowOffersViewController: UIViewController, UITableViewDelegate, UITa
     @IBOutlet weak var avalibleErrors: UILabel!
     @IBOutlet weak var chosenErrors: UILabel!
     @IBOutlet weak var totalPriseLabel: UILabel!
-    
+   
     
     var person = Person()
     var offer = HighOffer()
@@ -131,7 +131,7 @@ class ListOfLowOffersViewController: UIViewController, UITableViewDelegate, UITa
             //let serviceController = segue.destination as! ServiceViewController
             //serviceController.offer = (sender as? HighOffer)!
             //serviceController.service = ((sender as? HighOffer)?.service!)!}
-        
+            
             
             let navController = segue.destination as! UINavigationController
             

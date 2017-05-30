@@ -7,28 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0DC6CDD4515568D67F6614EE /* Pods_RAT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A34E6BECE7F6DFC49F93F745 /* Pods_RAT.framework */; };
-		552077761ED0357E005DE7E6 /* ListOfOffersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552077751ED0357E005DE7E6 /* ListOfOffersViewController.swift */; };
+		4B1071B2FA6143B7ACB0A6DE /* Pods_RAT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B9F858E232E9F2EFFA66D8C /* Pods_RAT.framework */; };
 		552077821ED15B3C005DE7E6 /* PersonalDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552077811ED15B3C005DE7E6 /* PersonalDataViewController.swift */; };
-		5524BB211EDAA0E400F7CA87 /* LowOfferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5524BB201EDAA0E400F7CA87 /* LowOfferViewController.swift */; };
 		553531C71ED2D87100A23445 /* HighOffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553531C61ED2D87100A23445 /* HighOffer.swift */; };
 		553531C91ED2D88100A23445 /* LowOffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553531C81ED2D88100A23445 /* LowOffer.swift */; };
 		553531CB1ED2E07B00A23445 /* ListOfHighOffersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553531CA1ED2E07B00A23445 /* ListOfHighOffersViewController.swift */; };
 		553531CD1ED2E0C700A23445 /* HighOfferCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553531CC1ED2E0C700A23445 /* HighOfferCell.swift */; };
-		553531CF1ED2E25E00A23445 /* LowOfferCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553531CE1ED2E25E00A23445 /* LowOfferCell.swift */; };
 		553531D11ED2E29600A23445 /* ListOfLowOffersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553531D01ED2E29600A23445 /* ListOfLowOffersViewController.swift */; };
+		558581C01EDD98F80083653C /* LowOfferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558581BF1EDD98F80083653C /* LowOfferViewController.swift */; };
+		558581C41EDDA0A80083653C /* LowOfferCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558581C31EDDA0A80083653C /* LowOfferCell.swift */; };
 		55DDAD7B1ED1891200F2F313 /* AddRedactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DDAD7A1ED1891200F2F313 /* AddRedactViewController.swift */; };
 		55DDAD7D1ED1B17800F2F313 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DDAD7C1ED1B17800F2F313 /* ChatViewController.swift */; };
+		5D1FA5BC1EDB47B200B1B464 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D1FA5BB1EDB47B200B1B464 /* CoreLocation.framework */; };
+		5D2D5F981ED7439500E3FF9E /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D2D5F971ED7439500E3FF9E /* Launch Screen.storyboard */; };
 		5D4A18671EBCBA9400678C91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D4A18661EBCBA9400678C91 /* Assets.xcassets */; };
 		5DAB0C4D1EB3300600AC1F77 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DAB0C4C1EB3300600AC1F77 /* MapKit.framework */; };
-		5DAB0C4F1EB3304600AC1F77 /* mapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DAB0C4E1EB3304600AC1F77 /* mapView.swift */; };
 		CA3F19CC1ECCF2DE00E0682C /* VehicleTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3F19CB1ECCF2DE00E0682C /* VehicleTabBarController.swift */; };
 		CADBBE231ED3762100809F86 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADBBE221ED3762000809F86 /* Channel.swift */; };
-		CAF3811B1EC9270800DC559D /* VKHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF3811A1EC9270800DC559D /* VKHelper.swift */; };
 		CAFA3C561ED4482E0051D0A3 /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFA3C551ED4482E0051D0A3 /* UIImage+Gif.swift */; };
 		CAFA3C5A1ED448970051D0A3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CAFA3C591ED448970051D0A3 /* GoogleService-Info.plist */; };
 		ED22BB7B1E9F9FCE0084320F /* ServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED22BB7A1E9F9FCE0084320F /* ServiceViewController.swift */; };
-		ED22BB7D1E9FA0560084320F /* ConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED22BB7C1E9FA0560084320F /* ConfirmViewController.swift */; };
 		ED22BB7F1E9FAB950084320F /* ReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED22BB7E1E9FAB950084320F /* ReviewCell.swift */; };
 		ED7017C71E7D368F00955C99 /* ListOfCrashesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7017C61E7D368F00955C99 /* ListOfCrashesViewController.swift */; };
 		ED7017CA1E7D49FF00955C99 /* CrashCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7017C91E7D49FF00955C99 /* CrashCell.swift */; };
@@ -36,7 +34,6 @@
 		ED97321D1E8AFCD200FCED3F /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED97321C1E8AFCD200FCED3F /* Person.swift */; };
 		ED99E5A41E8550260039EBF7 /* ValidatorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED99E5A31E8550260039EBF7 /* ValidatorHelper.swift */; };
 		EDA390F61E94375C002B0C65 /* NotificationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA390F51E94375C002B0C65 /* NotificationRouter.swift */; };
-		EDA8AE721E9EFA3B005BEC56 /* OfferCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA8AE711E9EFA3B005BEC56 /* OfferCell.swift */; };
 		EDA929DC1E8C7F97000D67BA /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA929DB1E8C7F97000D67BA /* Review.swift */; };
 		EDA929DE1E8C7FAB000D67BA /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA929DD1E8C7FAB000D67BA /* Service.swift */; };
 		EDAC87BA1E9EDC5B001E63E2 /* CrashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAC87B91E9EDC5B001E63E2 /* CrashViewController.swift */; };
@@ -53,30 +50,28 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		552077751ED0357E005DE7E6 /* ListOfOffersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListOfOffersViewController.swift; sourceTree = "<group>"; };
+		1B9F858E232E9F2EFFA66D8C /* Pods_RAT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RAT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		552077811ED15B3C005DE7E6 /* PersonalDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalDataViewController.swift; sourceTree = "<group>"; };
-		5524BB201EDAA0E400F7CA87 /* LowOfferViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LowOfferViewController.swift; sourceTree = "<group>"; };
 		553531C61ED2D87100A23445 /* HighOffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighOffer.swift; sourceTree = "<group>"; };
 		553531C81ED2D88100A23445 /* LowOffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LowOffer.swift; sourceTree = "<group>"; };
 		553531CA1ED2E07B00A23445 /* ListOfHighOffersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListOfHighOffersViewController.swift; sourceTree = "<group>"; };
 		553531CC1ED2E0C700A23445 /* HighOfferCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HighOfferCell.swift; path = RAT/HighOfferCell.swift; sourceTree = "<group>"; };
-		553531CE1ED2E25E00A23445 /* LowOfferCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LowOfferCell.swift; path = RAT/LowOfferCell.swift; sourceTree = "<group>"; };
 		553531D01ED2E29600A23445 /* ListOfLowOffersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListOfLowOffersViewController.swift; sourceTree = "<group>"; };
+		558581BF1EDD98F80083653C /* LowOfferViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LowOfferViewController.swift; sourceTree = "<group>"; };
+		558581C31EDDA0A80083653C /* LowOfferCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LowOfferCell.swift; sourceTree = "<group>"; };
 		55DDAD7A1ED1891200F2F313 /* AddRedactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRedactViewController.swift; sourceTree = "<group>"; };
 		55DDAD7C1ED1B17800F2F313 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
-		5CA389BAE570D8D13A9E1ECB /* Pods-RAT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RAT.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RAT/Pods-RAT.debug.xcconfig"; sourceTree = "<group>"; };
+		5D1FA5BB1EDB47B200B1B464 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		5D2D5F971ED7439500E3FF9E /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "RAT/Launch Screen.storyboard"; sourceTree = "<group>"; };
 		5D4A18661EBCBA9400678C91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5D4F5B71390AAE79121F4940 /* Pods-RAT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RAT.release.xcconfig"; path = "Pods/Target Support Files/Pods-RAT/Pods-RAT.release.xcconfig"; sourceTree = "<group>"; };
 		5DAB0C4C1EB3300600AC1F77 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		5DAB0C4E1EB3304600AC1F77 /* mapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mapView.swift; sourceTree = "<group>"; };
-		A34E6BECE7F6DFC49F93F745 /* Pods_RAT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RAT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B5F7872392D345EFD764BB23 /* Pods-RAT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RAT.release.xcconfig"; path = "Pods/Target Support Files/Pods-RAT/Pods-RAT.release.xcconfig"; sourceTree = "<group>"; };
+		BF4D002539CAE6351C0BFDE1 /* Pods-RAT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RAT.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RAT/Pods-RAT.debug.xcconfig"; sourceTree = "<group>"; };
 		CA3F19CB1ECCF2DE00E0682C /* VehicleTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehicleTabBarController.swift; sourceTree = "<group>"; };
 		CADBBE221ED3762000809F86 /* Channel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
-		CAF3811A1EC9270800DC559D /* VKHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VKHelper.swift; sourceTree = "<group>"; };
 		CAFA3C551ED4482E0051D0A3 /* UIImage+Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
 		CAFA3C591ED448970051D0A3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		ED22BB7A1E9F9FCE0084320F /* ServiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceViewController.swift; sourceTree = "<group>"; };
-		ED22BB7C1E9FA0560084320F /* ConfirmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmViewController.swift; sourceTree = "<group>"; };
 		ED22BB7E1E9FAB950084320F /* ReviewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReviewCell.swift; path = RAT/ReviewCell.swift; sourceTree = "<group>"; };
 		ED7017C61E7D368F00955C99 /* ListOfCrashesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListOfCrashesViewController.swift; sourceTree = "<group>"; };
 		ED7017C91E7D49FF00955C99 /* CrashCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CrashCell.swift; path = RAT/CrashCell.swift; sourceTree = "<group>"; };
@@ -84,7 +79,6 @@
 		ED97321C1E8AFCD200FCED3F /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		ED99E5A31E8550260039EBF7 /* ValidatorHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidatorHelper.swift; sourceTree = "<group>"; };
 		EDA390F51E94375C002B0C65 /* NotificationRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationRouter.swift; sourceTree = "<group>"; };
-		EDA8AE711E9EFA3B005BEC56 /* OfferCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OfferCell.swift; path = RAT/OfferCell.swift; sourceTree = "<group>"; };
 		EDA929DB1E8C7F97000D67BA /* Review.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
 		EDA929DD1E8C7FAB000D67BA /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		EDAC87B91E9EDC5B001E63E2 /* CrashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrashViewController.swift; sourceTree = "<group>"; };
@@ -107,8 +101,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D1FA5BC1EDB47B200B1B464 /* CoreLocation.framework in Frameworks */,
 				5DAB0C4D1EB3300600AC1F77 /* MapKit.framework in Frameworks */,
-				0DC6CDD4515568D67F6614EE /* Pods_RAT.framework in Frameworks */,
+				4B1071B2FA6143B7ACB0A6DE /* Pods_RAT.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,33 +113,34 @@
 		150C0AC8CA06FE5B40374530 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5D1FA5BB1EDB47B200B1B464 /* CoreLocation.framework */,
 				5DAB0C4C1EB3300600AC1F77 /* MapKit.framework */,
-				A34E6BECE7F6DFC49F93F745 /* Pods_RAT.framework */,
+				1B9F858E232E9F2EFFA66D8C /* Pods_RAT.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		20BF0F68589561CE43D6690A /* Pods */ = {
+		B8726FE39C36B165920CEEE8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5CA389BAE570D8D13A9E1ECB /* Pods-RAT.debug.xcconfig */,
-				B5F7872392D345EFD764BB23 /* Pods-RAT.release.xcconfig */,
+				BF4D002539CAE6351C0BFDE1 /* Pods-RAT.debug.xcconfig */,
+				5D4F5B71390AAE79121F4940 /* Pods-RAT.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		CA4C66811ED37DFC001453EF /* layout */ = {
+		CA4C66811ED37DFC001453EF /* views */ = {
 			isa = PBXGroup;
 			children = (
+				5D2D5F971ED7439500E3FF9E /* Launch Screen.storyboard */,
 				EDAFF5F51E7B3C630069F42E /* Main.storyboard */,
-				EDA8AE711E9EFA3B005BEC56 /* OfferCell.swift */,
 				ED22BB7E1E9FAB950084320F /* ReviewCell.swift */,
 				553531CC1ED2E0C700A23445 /* HighOfferCell.swift */,
-				553531CE1ED2E25E00A23445 /* LowOfferCell.swift */,
 				EDCC4B7B1E8D6FCF00D94FB7 /* VehicleCell.swift */,
 				ED7017C91E7D49FF00955C99 /* CrashCell.swift */,
+				558581C31EDDA0A80083653C /* LowOfferCell.swift */,
 			);
-			name = layout;
+			name = views;
 			path = ..;
 			sourceTree = "<group>";
 		};
@@ -165,16 +161,13 @@
 				EDCC4B771E8D26D900D94FB7 /* ListOfVehiclesViewController.swift */,
 				EDAC87B91E9EDC5B001E63E2 /* CrashViewController.swift */,
 				ED22BB7A1E9F9FCE0084320F /* ServiceViewController.swift */,
-				ED22BB7C1E9FA0560084320F /* ConfirmViewController.swift */,
-				5DAB0C4E1EB3304600AC1F77 /* mapView.swift */,
 				CA3F19CB1ECCF2DE00E0682C /* VehicleTabBarController.swift */,
-				552077751ED0357E005DE7E6 /* ListOfOffersViewController.swift */,
 				552077811ED15B3C005DE7E6 /* PersonalDataViewController.swift */,
 				55DDAD7A1ED1891200F2F313 /* AddRedactViewController.swift */,
 				55DDAD7C1ED1B17800F2F313 /* ChatViewController.swift */,
 				553531CA1ED2E07B00A23445 /* ListOfHighOffersViewController.swift */,
 				553531D01ED2E29600A23445 /* ListOfLowOffersViewController.swift */,
-				5524BB201EDAA0E400F7CA87 /* LowOfferViewController.swift */,
+				558581BF1EDD98F80083653C /* LowOfferViewController.swift */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -201,7 +194,7 @@
 				EDAFF5F01E7B3C630069F42E /* RAT */,
 				EDAFF5EF1E7B3C630069F42E /* Products */,
 				150C0AC8CA06FE5B40374530 /* Frameworks */,
-				20BF0F68589561CE43D6690A /* Pods */,
+				B8726FE39C36B165920CEEE8 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -217,7 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				CA4C66831ED37E50001453EF /* extensions */,
-				CA4C66811ED37DFC001453EF /* layout */,
+				CA4C66811ED37DFC001453EF /* views */,
 				ED9732171E8AFB5D00FCED3F /* models */,
 				EDC04B101E7F23650065D62E /* helpers */,
 				ED80EF6B1E7C7DEA0066AD83 /* controllers */,
@@ -236,7 +229,6 @@
 				EDBAEAC31E91AF73008BC298 /* APIHelper.swift */,
 				EDD8A79B1E93DCE800CC57A1 /* DataBaseHelper.swift */,
 				EDA390F51E94375C002B0C65 /* NotificationRouter.swift */,
-				CAF3811A1EC9270800DC559D /* VKHelper.swift */,
 			);
 			name = helpers;
 			sourceTree = "<group>";
@@ -248,12 +240,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EDAFF6001E7B3C630069F42E /* Build configuration list for PBXNativeTarget "RAT" */;
 			buildPhases = (
-				43B57366B043005D85E5FC3E /* [CP] Check Pods Manifest.lock */,
+				ADB76D671043F33DE8B14AC7 /* [CP] Check Pods Manifest.lock */,
 				EDAFF5EA1E7B3C620069F42E /* Sources */,
 				EDAFF5EB1E7B3C620069F42E /* Frameworks */,
 				EDAFF5EC1E7B3C620069F42E /* Resources */,
-				C0538CDD645290BEC5DA5DE1 /* [CP] Embed Pods Frameworks */,
-				0320061B908B56FB1A2083B1 /* [CP] Copy Pods Resources */,
+				10B9275B79E9F3966DCA8B89 /* [CP] Embed Pods Frameworks */,
+				493C5ABF8322A68A1A458A92 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -276,6 +268,7 @@
 				TargetAttributes = {
 					EDAFF5ED1E7B3C620069F42E = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = L9D4282J7Q;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -305,6 +298,7 @@
 			files = (
 				5D4A18671EBCBA9400678C91 /* Assets.xcassets in Resources */,
 				EDAFF5F71E7B3C630069F42E /* Main.storyboard in Resources */,
+				5D2D5F981ED7439500E3FF9E /* Launch Screen.storyboard in Resources */,
 				CAFA3C5A1ED448970051D0A3 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,37 +306,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0320061B908B56FB1A2083B1 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RAT/Pods-RAT-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		43B57366B043005D85E5FC3E /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		C0538CDD645290BEC5DA5DE1 /* [CP] Embed Pods Frameworks */ = {
+		10B9275B79E9F3966DCA8B89 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -357,6 +321,36 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RAT/Pods-RAT-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		493C5ABF8322A68A1A458A92 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RAT/Pods-RAT-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ADB76D671043F33DE8B14AC7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -367,23 +361,21 @@
 				EDA390F61E94375C002B0C65 /* NotificationRouter.swift in Sources */,
 				553531D11ED2E29600A23445 /* ListOfLowOffersViewController.swift in Sources */,
 				EDCC4B7C1E8D6FCF00D94FB7 /* VehicleCell.swift in Sources */,
-				552077761ED0357E005DE7E6 /* ListOfOffersViewController.swift in Sources */,
 				CAFA3C561ED4482E0051D0A3 /* UIImage+Gif.swift in Sources */,
 				55DDAD7B1ED1891200F2F313 /* AddRedactViewController.swift in Sources */,
 				EDB05D2D1E8BC37B00FFE86E /* Vehicle.swift in Sources */,
 				EDA929DE1E8C7FAB000D67BA /* Service.swift in Sources */,
 				EDBAEAC41E91AF73008BC298 /* APIHelper.swift in Sources */,
+				558581C41EDDA0A80083653C /* LowOfferCell.swift in Sources */,
 				EDD8A79C1E93DCE800CC57A1 /* DataBaseHelper.swift in Sources */,
 				553531C71ED2D87100A23445 /* HighOffer.swift in Sources */,
 				552077821ED15B3C005DE7E6 /* PersonalDataViewController.swift in Sources */,
-				EDA8AE721E9EFA3B005BEC56 /* OfferCell.swift in Sources */,
-				553531CF1ED2E25E00A23445 /* LowOfferCell.swift in Sources */,
 				EDCC4B781E8D26D900D94FB7 /* ListOfVehiclesViewController.swift in Sources */,
 				ED80EF6D1E7C8AD10066AD83 /* RegistrationViewController.swift in Sources */,
 				EDAFF5F41E7B3C630069F42E /* ViewController.swift in Sources */,
 				EDAFF5F21E7B3C630069F42E /* AppDelegate.swift in Sources */,
+				558581C01EDD98F80083653C /* LowOfferViewController.swift in Sources */,
 				EDAC87BA1E9EDC5B001E63E2 /* CrashViewController.swift in Sources */,
-				ED22BB7D1E9FA0560084320F /* ConfirmViewController.swift in Sources */,
 				EDA929DC1E8C7F97000D67BA /* Review.swift in Sources */,
 				ED7017CA1E7D49FF00955C99 /* CrashCell.swift in Sources */,
 				ED7017C71E7D368F00955C99 /* ListOfCrashesViewController.swift in Sources */,
@@ -391,16 +383,13 @@
 				EDB05D311E8BD8F200FFE86E /* Offer.swift in Sources */,
 				ED97321D1E8AFCD200FCED3F /* Person.swift in Sources */,
 				CADBBE231ED3762100809F86 /* Channel.swift in Sources */,
-				CAF3811B1EC9270800DC559D /* VKHelper.swift in Sources */,
 				553531C91ED2D88100A23445 /* LowOffer.swift in Sources */,
 				553531CD1ED2E0C700A23445 /* HighOfferCell.swift in Sources */,
 				ED99E5A41E8550260039EBF7 /* ValidatorHelper.swift in Sources */,
 				ED22BB7B1E9F9FCE0084320F /* ServiceViewController.swift in Sources */,
 				EDB05D2F1E8BD8CE00FFE86E /* Crash.swift in Sources */,
 				CA3F19CC1ECCF2DE00E0682C /* VehicleTabBarController.swift in Sources */,
-				5DAB0C4F1EB3304600AC1F77 /* mapView.swift in Sources */,
 				55DDAD7D1ED1B17800F2F313 /* ChatViewController.swift in Sources */,
-				5524BB211EDAA0E400F7CA87 /* LowOfferViewController.swift in Sources */,
 				ED22BB7F1E9FAB950084320F /* ReviewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -513,11 +502,11 @@
 		};
 		EDAFF6011E7B3C630069F42E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5CA389BAE570D8D13A9E1ECB /* Pods-RAT.debug.xcconfig */;
+			baseConfigurationReference = BF4D002539CAE6351C0BFDE1 /* Pods-RAT.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = L9D4282J7Q;
 				INFOPLIST_FILE = RAT/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -530,11 +519,11 @@
 		};
 		EDAFF6021E7B3C630069F42E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B5F7872392D345EFD764BB23 /* Pods-RAT.release.xcconfig */;
+			baseConfigurationReference = 5D4F5B71390AAE79121F4940 /* Pods-RAT.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = L9D4282J7Q;
 				INFOPLIST_FILE = RAT/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

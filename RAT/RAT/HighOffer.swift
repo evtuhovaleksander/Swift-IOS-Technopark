@@ -22,7 +22,4 @@ class HighOffer: Object {
     var lowOffers = LinkingObjects(fromType: LowOffer.self, property: "highOffer")
     override static func primaryKey() -> String? {
         return "id"
-    }
-    
-    
-}
+    }}
