@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import RealmSwift
+import SwiftyVK
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +18,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+
+        print(Realm.Configuration.defaultConfiguration.fileURL!)
+        
+        let config = Realm.Configuration(
+
+            schemaVersion: 15,
+            
+            migrationBlock: { migration, oldSchemaVersion in
+                
+                if (oldSchemaVersion < 15) {
+                    
+                }
+        })
+        Realm.Configuration.defaultConfiguration = config
+        
+        UIApplication.shared.statusBarStyle = .lightContent
+        FIRApp.configure()
         return true
     }
 
@@ -42,5 +61,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
+    func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
+        VK.process(url: url, sourceApplication: sourceApplication)
+        return true
+    }
 }
 

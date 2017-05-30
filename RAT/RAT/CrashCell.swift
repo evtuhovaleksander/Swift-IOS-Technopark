@@ -10,8 +10,9 @@ import UIKit
 
 class CrashCell: UITableViewCell {
 
-    @IBOutlet weak var errorCode: UILabel!
-    
+    @IBOutlet weak var code: UILabel!
+    @IBOutlet weak var shortDecription: UILabel!
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -20,7 +21,6 @@ class CrashCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
     }
 
 }

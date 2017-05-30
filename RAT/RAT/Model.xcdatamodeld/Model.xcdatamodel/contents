@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16E195" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CrashModel" representedClassName="CrashModel" syncable="YES" codeGenerationType="class">
+        <attribute name="code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="full_description" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" indexed="YES" syncable="YES"/>
+        <attribute name="short_description" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="offers" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="OfferModel" inverseName="crash" inverseEntity="OfferModel" syncable="YES"/>
+        <relationship name="vehicle" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="VehicleModel" inverseName="crashes" inverseEntity="VehicleModel" syncable="YES"/>
+    </entity>
+    <entity name="OfferModel" representedClassName="OfferModel" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="message" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="crash" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CrashModel" inverseName="offers" inverseEntity="CrashModel" syncable="YES"/>
+        <relationship name="service" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ServiceModel" inverseName="offer" inverseEntity="ServiceModel" syncable="YES"/>
+    </entity>
+    <entity name="ReviewModel" representedClassName="ReviewModel" syncable="YES" codeGenerationType="class">
+        <attribute name="date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="service" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ServiceModel" inverseName="reviews" inverseEntity="ServiceModel" syncable="YES"/>
+    </entity>
+    <entity name="ServiceModel" representedClassName="ServiceModel" syncable="YES" codeGenerationType="class">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="description_service" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phone" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="offer" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="OfferModel" inverseName="service" inverseEntity="OfferModel" syncable="YES"/>
+        <relationship name="reviews" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="ReviewModel" inverseName="service" inverseEntity="ReviewModel" syncable="YES"/>
+    </entity>
+    <entity name="VehicleModel" representedClassName="VehicleModel" syncable="YES" codeGenerationType="class">
+        <attribute name="brand" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" indexed="YES" syncable="YES"/>
+        <attribute name="model" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="number" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="vin" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="year" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="crashes" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="CrashModel" inverseName="vehicle" inverseEntity="CrashModel" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CrashModel" positionX="-19782" positionY="-3996" width="128" height="148"/>
+        <element name="OfferModel" positionX="-20061" positionY="-3861" width="128" height="118"/>
+        <element name="ReviewModel" positionX="-20205" positionY="-3733" width="128" height="103"/>
+        <element name="ServiceModel" positionX="-19836" positionY="-3735" width="128" height="148"/>
+        <element name="VehicleModel" positionX="-20225" positionY="-4176" width="191" height="148"/>
+    </elements>
+</model>
