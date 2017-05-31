@@ -25,6 +25,7 @@ class ListOfCrashesViewController: UIViewController, UITableViewDataSource, UITa
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Список поломок"
         listOfCrashesTable.dataSource = self
         listOfCrashesTable.delegate = self
         listOfCrashesTable.tableFooterView = UIView() // delete excess separators
@@ -76,7 +77,7 @@ class ListOfCrashesViewController: UIViewController, UITableViewDataSource, UITa
         case .history:
             crash = historyCrashes[index]
         }
-        APIHelper.getListOfOffersRequest(crash: crash)
+        //APIHelper.getListOfOffersRequest(crash: crash)
         self.performSegue(withIdentifier: "fromListOfCrashesToCrashSegue", sender: crash)
     }
     

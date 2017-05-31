@@ -13,8 +13,8 @@ import SwiftyJSON
 class APIHelper {
     
     
-    //static let SERVER_IP="https://bmsturat.herokuapp.com"
-    static let SERVER_IP="http://127.0.0.1:8000"
+    static let SERVER_IP="https://bmsturat.herokuapp.com"
+    //static let SERVER_IP="http://127.0.0.1:8000"
     
     
     static let SIGNUP_URL = "\(SERVER_IP)/api/signup"

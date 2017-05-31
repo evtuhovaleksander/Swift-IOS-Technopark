@@ -14,6 +14,15 @@ class DataBaseHelper {
     
     static let realm = try! Realm()
     
+    
+    class func setVehicleID(vehicle: Vehicle, id: Int){
+        try! realm.write {
+            vehicle.id = id
+        }
+        save(object: vehicle)
+    }
+    
+    
     class func deleteVehicles(vehicleIds : [Int]){
         let vehicles = DataBaseHelper.getPerson().vehicles
         for vehicle in vehicles{
@@ -28,11 +37,11 @@ class DataBaseHelper {
     }
     
     class func deleteVehicle(vehicle:Vehicle){
-        
+        let id = vehicle.id
+        let vehicle = getVehicle(id: id)
         try! realm.write {
-            realm.delete(vehicle)
+            realm.delete(vehicle!)
         }
-        
     }
     
     class func deleteHighOffers(vehicle:Vehicle,offerIds : [Int]){
@@ -68,7 +77,9 @@ class DataBaseHelper {
                 vehicle.year = json["year"].stringValue
                 vehicle.model = json["model"].stringValue
                 vehicle.owner = person
+                
             }
+            save(object: vehicle)
             return vehicle
         }
         else {
@@ -87,13 +98,15 @@ class DataBaseHelper {
     }
         
     class func setVehicle(person: Person, vehicle: Vehicle){
-            let vehicle = vehicle
+            try! realm.write {
             vehicle.owner = person
+            
+            }
             save(object: vehicle)
     }
     
     class func setVehicle( vehicle: Vehicle){
-            let vehicle = vehicle
+            //let vehicle = vehicle
             save(object: vehicle)
     }
     
@@ -101,8 +114,9 @@ class DataBaseHelper {
         try! realm.write {
             let vehicle = vehicle
             vehicle.picture = data
+
         }
-        //save(object: vehicle)
+        save(object: vehicle)
     }
     
     
@@ -116,7 +130,7 @@ class DataBaseHelper {
         print(id)
         do {
             return realm.objects(Vehicle.self).filter(predicate).first
-        } catch let error{
+        } catch let _{
             return nil
         }
     }
@@ -199,7 +213,7 @@ class DataBaseHelper {
     //new offer
     
     class func setHighOffer(vehicle: Vehicle, json: JSON){
-        var highOffer = HighOffer()
+        let highOffer = HighOffer()
         //highOffer.message = json["message"].stringValue
         //highOffer.price = json["price"].intValue
         highOffer.date = json["date"].stringValue
@@ -208,7 +222,7 @@ class DataBaseHelper {
         highOffer.isAvalible = json["is_avalible"].boolValue
         //highOffer.date = json["date"].stringValue
         highOffer.vehicle = vehicle
-        var service = setService(json: json["service"].arrayValue[0])
+        let service = setService(json: json["service"].arrayValue[0])
         highOffer.service = service
         
         

@@ -19,6 +19,7 @@ class ListOfHighOffersViewController: UIViewController, UITableViewDelegate, UIT
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Список предложений"
         
         listOfOffersTable.dataSource = self
         listOfOffersTable.delegate = self
@@ -47,19 +48,19 @@ class ListOfHighOffersViewController: UIViewController, UITableViewDelegate, UIT
         let cell = listOfOffersTable.dequeueReusableCell(withIdentifier: "HighOfferCell") as! HighOfferCell
         let index = indexPath.row
         if (vehicle?.highOffers[index].isAvalible)!{
-            cell.isAvalibleLabel.text = "is Avalible"
+            cell.isAvalibleLabel.text = "доступно"
             cell.isAvalibleLabel.textColor = UIColor.green
         }
         else{
-            cell.isAvalibleLabel.text = "not avaible"
+            cell.isAvalibleLabel.text = "недоступно"
             cell.isAvalibleLabel.textColor = UIColor.red
         }
         if (vehicle?.highOffers[index].isConfirmed)!{
-            cell.isConfirmedLabel.text = "is Confirmed"
+            cell.isConfirmedLabel.text = "продтвержден"
             cell.isConfirmedLabel.textColor = UIColor.green
         }
         else{
-            cell.isConfirmedLabel.text = "not Confirmed"
+            cell.isConfirmedLabel.text = "неподтвержден"
             cell.isConfirmedLabel.textColor = UIColor.red
         }
         var price = 0
@@ -80,7 +81,7 @@ class ListOfHighOffersViewController: UIViewController, UITableViewDelegate, UIT
             }
         }
         
-        cell.errorLabel.text = "\(avalible)/\(total) errors can be fixed"
+        cell.errorLabel.text = "\(avalible)/\(total) ошибки"
         
         return cell
     }

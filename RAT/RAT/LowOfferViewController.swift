@@ -14,8 +14,9 @@ class LowOfferViewController: UIViewController {
     
     @IBOutlet weak var codeLabel: UILabel!
     @IBOutlet weak var crashLabel: UILabel!
-    @IBOutlet weak var descriptionLabel: UILabel!
-    @IBOutlet weak var messageLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UITextView!
+    @IBOutlet weak var messageLabel: UITextView!
+
     @IBOutlet weak var priceLabel: UILabel!
     
     

@@ -76,10 +76,13 @@ class ViewController: UIViewController,VKSdkDelegate,VKSdkUIDelegate {
          print(VKSdk.accessToken().localUser.first_name)
          print(VKSdk.accessToken().localUser.phone)
          print(VKSdk.accessToken().localUser.mobile_phone)
+        
 
  */
-        
-        
+        let person = Person()
+        person.email = "user@mail.ru"
+        person.password = "qwerty"
+        APIHelper.logInRequest(person: person)
     }
 
     
@@ -129,7 +132,7 @@ class ViewController: UIViewController,VKSdkDelegate,VKSdkUIDelegate {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "fromAuthorizationToListOfVehiclesSegue"{
-            APIHelper.getListsOfVehiclesAndCrashesRequest()
+            //APIHelper.getListsOfVehiclesAndCrashesRequest()
         }
     }
     

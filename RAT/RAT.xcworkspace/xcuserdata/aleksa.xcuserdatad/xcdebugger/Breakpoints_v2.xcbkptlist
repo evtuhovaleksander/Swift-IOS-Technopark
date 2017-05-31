@@ -79,7 +79,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "57"
             endingLineNumber = "57"
-            landmarkName = "facebookLogIn(_:)"
+            landmarkName = "logIn(_:)"
             landmarkType = "7">
             <Locations>
                <Location
@@ -127,7 +127,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "57"
             endingLineNumber = "57"
-            landmarkName = "facebookLogIn(_:)"
+            landmarkName = "logIn(_:)"
             landmarkType = "7">
             <Locations>
                <Location
@@ -207,7 +207,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "62"
             endingLineNumber = "62"
-            landmarkName = "logInCallback(_:)"
+            landmarkName = "logIn(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -223,7 +223,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "58"
             endingLineNumber = "58"
-            landmarkName = "facebookLogIn(_:)"
+            landmarkName = "logIn(_:)"
             landmarkType = "7">
             <Locations>
                <Location
@@ -303,8 +303,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "25"
             endingLineNumber = "25"
-            landmarkName = "deleteVehicles(vehicleIds:)"
-            landmarkType = "7">
+            landmarkName = "DataBaseHelper"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -876,7 +876,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "83"
             endingLineNumber = "83"
-            landmarkName = "editUserCallback(_:)"
+            landmarkName = "saveChange(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -892,8 +892,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "44"
             endingLineNumber = "44"
-            landmarkName = "PersonalDataViewController"
-            landmarkType = "3">
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1004,7 +1004,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "157"
             endingLineNumber = "157"
-            landmarkName = "setCrash(vehicle:json:)"
+            landmarkName = "setPerson(person:id:email:firstname:lastname:phone:actual:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1020,8 +1020,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "166"
             endingLineNumber = "166"
-            landmarkName = "DataBaseHelper"
-            landmarkType = "3">
+            landmarkName = "setCrash(vehicle:json:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1036,8 +1036,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "167"
             endingLineNumber = "167"
-            landmarkName = "DataBaseHelper"
-            landmarkType = "3">
+            landmarkName = "setCrash(vehicle:json:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1301,7 +1301,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "252"
             endingLineNumber = "252"
-            landmarkName = "setLowOffer(lowOffer:isChosen:)"
+            landmarkName = "setLowOffer(highOffer:json:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

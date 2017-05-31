@@ -13,7 +13,7 @@ import Photos
 
 class ChatViewController: JSQMessagesViewController {
     
-    var offer = Offer()
+    var offer = HighOffer()
     
     private lazy var channelRef: FIRDatabaseReference = FIRDatabase.database().reference().child("channels")
     lazy var outgoingBubbleImageView: JSQMessagesBubbleImage = self.setupOutgoingBubble()

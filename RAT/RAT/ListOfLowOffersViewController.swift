@@ -38,7 +38,7 @@ class ListOfLowOffersViewController: UIViewController, UITableViewDelegate, UITa
         text += (offer.vehicle?.model)!+" "
         text += (offer.vehicle?.year)!
         vehicleLabel.text = text
-        
+        calcLabels()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -62,8 +62,8 @@ class ListOfLowOffersViewController: UIViewController, UITableViewDelegate, UITa
         }
         
         totalPriseLabel.text = String(price)
-        avalibleErrors.text = "\(avalible)/\(total) can be fixed"
-        chosenErrors.text = "\(chosen)/\(total) will be fixed"
+        avalibleErrors.text = "\(avalible)/\(total) могут быть исправлены"
+        chosenErrors.text = "\(chosen)/\(total) будут исправлены"
     }
     
     override func viewWillAppear(_ animated: Bool) {
